@@ -1,0 +1,12 @@
+.footer-column p a{
+    text-decoration:none;
+    color:#f1ece7;
+    display:block;
+    width:100%;
+    transition:0.3s;
+}
+
+.footer-column p a:hover{
+    transform:translateX(4px);
+    opacity:0.8;
+}

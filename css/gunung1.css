@@ -1,0 +1,41 @@
+.pagination{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:50px 0;
+}
+
+.pagination a{
+    width:42px;
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#d7d2c7;
+
+    color:#4b3b30;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.pagination a:hover{
+    background:#73917d;
+    color:white;
+}
+
+.pagination .active{
+    background:#73917d;
+    color:white;
+}

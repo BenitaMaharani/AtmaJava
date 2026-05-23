@@ -1,0 +1,483 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#eef0e3;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:95%;
+    margin:20px auto;
+    background:#f6f6ed;
+
+    border-radius:30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 25px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo img{
+    width:55px;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#3d332c;
+    font-size:14px;
+    font-weight:500;
+}
+
+.nav-button{
+    display:flex;
+    gap:10px;
+}
+
+.btn-masuk{
+    padding:8px 18px;
+    border-radius:20px;
+    border:1px solid #7f624f;
+    background:transparent;
+    color:#5d4336;
+    cursor:pointer;
+}
+
+.btn-daftar{
+    padding:8px 18px;
+    border-radius:20px;
+    border:none;
+    background:#73917d;
+    color:white;
+    cursor:pointer;
+}
+
+/* ================= ABOUT HERO BACKGROUND LAYER ================= */
+
+.about-hero {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 40px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    position: relative;
+    
+    /* Background gambar gunung besar utama */
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), 
+                url('../assets/img_gunung/gunung.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo Atma Java Bulat Besar di Kiri */
+.about h1 {
+    text-align: center;   /* Membuat teks ke tengah */
+    font-size: 45px;
+    margin-bottom: 35px;
+    color: #3d332c;       /* Sesuaikan dengan warna font tema kamu */
+}
+
+.about-logo {
+    width: 280px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.about-logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Konten Sebelah Kanan */
+.about-hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 2;
+}
+
+/* Efek Kaca Transparan (Glassmorphism) untuk Box */
+.about-tagline, .about-makna-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.about-tagline {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* Box Makna Slogan */
+.about-makna-box h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.makna-sub {
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.makna-sub strong {
+    color: #ffe699; /* Warna kuning soft untuk highlight judul sub-slogan */
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* ================= Bagian Bawah (Aspirasi & Langkah) ================= */
+
+.aspirasi, .langkah {
+    margin-bottom: 40px;
+    color: #3d332c;
+    padding-left: 40px; /* Ditambahkan agar bergeser ke kanan */
+}
+
+.aspirasi h2, .langkah h2 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.aspirasi p {
+    font-style: italic;
+    color: #555;
+}
+
+.langkah ul {
+    list-style-type: none; /* Hilangkan bullet standar */
+    padding-left: 0;
+}
+
+.langkah li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Membuat custom bullet point strip/kotak kecil */
+.langkah li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    color: #7b3f3a;
+}
+
+/* ================= SEKSYEN TIM / KONTRIBUTOR BARU ================= */
+/* Menggeser bagian Tim / Kontributor */
+.team-section {
+    margin-bottom: 60px;
+    padding-left: 40px; /* Ditambahkan agar bergeser ke kanan */
+}
+
+.team-container-flex {
+    display: flex;
+    background: #ece2c7;
+    border-radius: 15px;
+    max-width: 600px; /* Batasi lebar kotak tim agar pas seperti figma */
+    overflow: hidden;
+}
+
+.team-names {
+    flex: 1.3;
+    padding: 20px;
+}
+
+.team-contacts {
+    flex: 1;
+    background: #e2d7ba; /* Kontak sedikit lebih gelap warnanya */
+    padding: 20px;
+}
+
+.contact-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #3d332c;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-title i {
+    color: #d62976; /* Warna icon instagram */
+}
+
+.member-item {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #3d332c;
+    height: 25px; /* Menjaga keselarasan tinggi baris antara kiri dan kanan */
+}
+
+.team-contacts .member-item a {
+    text-decoration: none;
+    color: #7b3f3a;
+    font-weight: 600;
+}
+
+/* Responsive Handphone */
+@media(max-width: 900px){
+    .about-hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-logo {
+        width: 200px;
+    }
+    .team-container-flex {
+        flex-direction: column;
+    }
+}
+
+/*FOOTER*/
+footer{
+    width:100%;
+
+    padding:45px 65px 35px;
+
+    display:grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    gap:60px;
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        rgba(74,43,27,0.88),
+        rgba(60,35,22,0.92)
+    ),
+
+    url('assets/img/bg-footer.png');
+
+    background-size:cover;
+    background-position:center;
+
+    backdrop-filter:blur(4px);
+
+    color:white;
+}
+
+footer::before{
+
+    content:'';
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(255,255,255,0.03);
+
+    pointer-events:none;
+}
+
+.footer-left{
+    position:relative;
+    z-index:2;
+}
+
+.footer-logo{
+    display:flex; 
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+}
+
+.footer-logo img{
+    width: 62px;
+    height: 62px;
+}
+
+.footer-logo h2{
+    font-size:42px;
+
+    font-family:serif;
+    font-weight:500;
+    font-style:italic;
+}
+
+.footer-left p{
+    width:290px;
+
+    font-size:13px;
+    line-height:1.9;
+
+    color:#ebe4de;
+}
+
+.foot-center{
+    position:relative;
+    z-index:2
+}
+
+.footer-contact{
+    display:flex;
+    gap:14px;
+
+    margin-bottom:24px;
+}
+
+.footer-contact i{
+
+    font-size:18px;
+    margin-top:4px;
+
+    color:#f2f2f2;
+}
+
+.footer-contact p{
+    font-size:13px;
+    line-height:1.9;
+
+    color:#f4f0ec;
+}
+
+.footer-menu{
+
+    display:flex;
+    justify-content:space-between;
+
+    margin-top:25px;
+}
+
+
+/* tiap kolom */
+
+.footer-column h3{
+
+    font-size:15px;
+    margin-bottom:14px;
+
+    position:relative;
+}
+
+
+/* garis bawah */
+.footer-column h3::after{
+
+    content:'';
+
+    width:85px;
+    height:1px;
+
+    background:rgba(255,255,255,0.5);
+
+    position:absolute;
+    left:0;
+    bottom:-8px;
+
+}
+
+.footer-column p{
+
+    margin-top:14px;
+
+    font-size:13px;
+    color:#f1ece7;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.footer-column p:hover{
+
+    transform:translateX(4px);
+    opacity:0.8;
+}/* Menghilangkan warna biru default dan garis bawah pada link footer */
+.footer-column p a {
+    text-decoration: none;
+    color: inherit; /* Mengikuti warna p (krem) */
+    display: block;
+    width: 100%;
+}
+
+/* Supaya hover-nya tetap jalan meskipun ada di dalam tag <a> */
+.footer-column p:hover a {
+    color: #ffffff;
+}
+
+
+.copyright{
+    background:#f5f2ea;
+
+    padding:14px 25px;
+
+    font-size:12px;
+
+    color:#5d4a3d;
+}
+
+/*RESPONSIVE*/
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        height:650px;
+    }
+
+    .hero-text{
+        left:20px;
+        top:60px;
+    }
+
+    .hero-text h1{
+        font-size:38px;
+    }
+
+    .hero-text p{
+        width:90%;
+    }
+
+    .info-box{
+        flex-direction:column;
+        right:20px;
+        left:20px;
+        bottom:20px;
+    }
+
+    footer{
+        flex-direction:column;
+        padding:40px 30px;
+    }
+
+}

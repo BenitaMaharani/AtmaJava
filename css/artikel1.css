@@ -1,0 +1,488 @@
+/* ================= RESET & BASE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f0e7; /* Background utama krem hangat */
+    color: #3d2d24;
+}
+
+/*NAVBAR*/
+.navbar{
+    width:95%;
+    margin:20px auto;
+    background:#f6f6ed;
+    border-radius:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 25px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo img{
+    width:55px;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#3d332c;
+    font-size:14px;
+    font-weight:500;
+}
+
+.nav-button{
+    display:flex;
+    gap:10px;
+}
+
+.btn-masuk{
+    padding:8px 18px;
+    border-radius:20px;
+    border:1px solid #7f624f;
+    background:transparent;
+    color:#5d4336;
+    cursor:pointer;
+}
+
+.btn-daftar{
+    padding:8px 18px;
+    border-radius:20px;
+    border:none;
+    background:#73917d;
+    color:white;
+    cursor:pointer;
+}
+
+/* ================= HERO ARTIKEL (BANNER) ================= */
+.hero-artikel, .banner-artikel {
+    width: 90%;
+    margin: 25px auto 0;
+}
+
+.hero-artikel img, .banner-artikel img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 22px;
+    display: block;
+}
+
+/* ================= DETAIL ARTIKEL CONTENT (UTAMA) ================= */
+.artikel-detail, .artikel-section {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.artikel-detail h1, .judul-artikel {
+    font-size: 34px;
+    line-height: 1.4;
+    color: #3d2d24;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.artikel-content, .konten-artikel {
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+/* Quote Box Cokelat Tua di Sisi Kiri */
+.quote-box {
+    width: 240px;
+    min-width: 240px;
+    background: #4a2b1b; /* Cokelat tua figma */
+    border-radius: 14px;
+    padding: 25px 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #f1e7de; /* Teks krem terang */
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Isi Teks Artikel di Sisi Kanan */
+.isi-artikel, .isi-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 2;
+    color: #333333;
+    text-align: justify;
+}
+
+/* Styling otomatis subjudul H3 dari database */
+.isi-artikel h3, .isi-text h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #3d2d24;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Styling otomatis list poin dari database */
+.isi-artikel ul, .isi-text ul {
+    margin-left: 22px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+.isi-artikel li, .isi-text li {
+    margin-bottom: 8px;
+    color: #444444;
+}
+
+.isi-artikel strong, .isi-text strong {
+    color: #3d2d24;
+    font-weight: 700;
+}
+
+/* ================= STYLING KHUSUS ARTIKEL 2 & 3 ================= */
+.danger-text {
+    color: #a32a2a;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.artikel-two-columns {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    border-top: 1px solid #dcd6cd;
+    padding-top: 20px;
+}
+
+.artikel-two-columns .col {
+    flex: 1;
+}
+
+/* ================= SECTION ARTIKEL LAIN (Rekomendasi Card) ================= */
+.artikel-lain {
+    width: 100%;
+    background: #bfd2ca; /* Background hijau sage bawah */
+    padding: 50px 5% 60px;
+    margin-top: 40px;
+}
+
+.artikel-lain h3, .text-lain {
+    color: #3d2d24;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Grid Container untuk Card */
+.artikel-card-container, .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+}
+
+/* Style Card Link */
+.artikel-card, .card {
+    background: #f5f2e8;
+    border: 2px solid #8b6a55;
+    border-radius: 18px;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 5px 5px 0px #c8c1b5;
+    display: flex;
+    flex-direction: column;
+}
+
+.artikel-card:hover, .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 8px 15px rgba(0,0,0,0.12);
+}
+
+.artikel-card img, .card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+
+/* Content dalam Card */
+.artikel-card-content, .card-content {
+    background: #4b3026; /* Background cokelat dalam card */
+    margin-top: 10px;
+    border-radius: 14px;
+    padding: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.artikel-card-content h4, .card-content h3 {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.card-content p {
+    display: none; /* Menyembunyikan ringkasan teks bawaan lama agar rapi */
+}
+
+/* Tombol Play Icon Bulat / Span Segitiga */
+.artikel-card-content button, .card-content span {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: #6f8b80; /* Hijau tombol figma */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.artikel-card:hover .artikel-card-content button,
+.card:hover .card-content span {
+    background: #577066;
+    transform: scale(1.05);
+}
+
+/*FOOTER*/
+footer{
+    width:100%;
+
+    padding:45px 65px 35px;
+
+    display:grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    gap:60px;
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        rgba(74,43,27,0.88),
+        rgba(60,35,22,0.92)
+    ),
+
+    url('assets/img/bg-footer.png');
+
+    background-size:cover;
+    background-position:center;
+
+    backdrop-filter:blur(4px);
+
+    color:white;
+}
+
+footer::before{
+
+    content:'';
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(255,255,255,0.03);
+
+    pointer-events:none;
+}
+
+.footer-left{
+    position:relative;
+    z-index:2;
+}
+
+.footer-logo{
+    display:flex; 
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+}
+
+.footer-logo img{
+    width: 62px;
+    height: 62px;
+}
+
+.footer-logo h2{
+    font-size:42px;
+
+    font-family:serif;
+    font-weight:500;
+    font-style:italic;
+}
+
+.footer-left p{
+    width:290px;
+
+    font-size:13px;
+    line-height:1.9;
+
+    color:#ebe4de;
+}
+
+.foot-center{
+    position:relative;
+    z-index:2
+}
+
+.footer-contact{
+    display:flex;
+    gap:14px;
+
+    margin-bottom:24px;
+}
+
+.footer-contact i{
+
+    font-size:18px;
+    margin-top:4px;
+
+    color:#f2f2f2;
+}
+
+.footer-contact p{
+    font-size:13px;
+    line-height:1.9;
+
+    color:#f4f0ec;
+}
+
+.footer-menu{
+
+    display:flex;
+    justify-content:space-between;
+
+    margin-top:25px;
+}
+
+
+/* tiap kolom */
+
+.footer-column h3{
+
+    font-size:15px;
+    margin-bottom:14px;
+
+    position:relative;
+}
+
+
+/* garis bawah */
+.footer-column h3::after{
+
+    content:'';
+
+    width:85px;
+    height:1px;
+
+    background:rgba(255,255,255,0.5);
+
+    position:absolute;
+    left:0;
+    bottom:-8px;
+
+}
+
+.footer-column p{
+
+    margin-top:14px;
+
+    font-size:13px;
+    color:#f1ece7;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.footer-column p:hover{
+
+    transform:translateX(4px);
+    opacity:0.8;
+}/* Menghilangkan warna biru default dan garis bawah pada link footer */
+.footer-column p a {
+    text-decoration: none;
+    color: inherit; /* Mengikuti warna p (krem) */
+    display: block;
+    width: 100%;
+}
+
+/* Supaya hover-nya tetap jalan meskipun ada di dalam tag <a> */
+.footer-column p:hover a {
+    color: #ffffff;
+}
+
+
+.copyright{
+    background:#f5f2ea;
+
+    padding:14px 25px;
+
+    font-size:12px;
+
+    color:#5d4a3d;
+}
+
+/*RESPONSIVE*/
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        height:650px;
+    }
+
+    .hero-text{
+        left:20px;
+        top:60px;
+    }
+
+    .hero-text h1{
+        font-size:38px;
+    }
+
+    .hero-text p{
+        width:90%;
+    }
+
+    .info-box{
+        flex-direction:column;
+        right:20px;
+        left:20px;
+        bottom:20px;
+    }
+
+    footer{
+        flex-direction:column;
+        padding:40px 30px;
+    }
+
+}
