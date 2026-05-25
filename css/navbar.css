@@ -1,11 +1,11 @@
-.menu li a{
+.menu li a {
     position: relative;
     text-decoration: none;
     color: black;
     padding-bottom: 5px;
 }
 
-.menu li a::after{
+.menu li a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -16,10 +16,8 @@
     transition: 0.3s;
 }
 
-.menu li a:hover::after{
-    width: 100%;
-}
-
-.menu li a.active::after{
-    width: 100%;
+/* Gabungkan keadaan hover dan active agar menulis kodenya lebih efisien */
+.menu li a:hover::after,
+.menu li a.active::after {
+    width: 100% !important; /* Gunakan !important jika masih ada bentrokan dari framework/reset CSS lain */
 }
