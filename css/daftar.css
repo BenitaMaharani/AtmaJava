@@ -1,213 +1,198 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background:#eef0e3;
+body {
+    background: #eef0e3;
 }
 
-/*NAVBAR*/
-.navbar{
-    width:95%;
-    margin:20px auto;
-    background:#f6f6ed;
-    border-radius:30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 25px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+/* NAVBAR */
+.navbar {
+    width: 95%;
+    margin: 20px auto;
+    background: #f6f6ed;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
-.logo img{
-    width:55px;
+.logo img {
+    width: 55px;
 }
 
-.menu{
-    display:flex;
-    list-style:none;
-    gap:30px;
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
-.menu a{
-    text-decoration:none;
-    color:#3d332c;
-    font-size:14px;
-    font-weight:500;
+.menu a {
+    text-decoration: none;
+    color: #3d332c;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.nav-button{
-    display:flex;
-    gap:10px;
+.nav-button {
+    display: flex;
+    gap: 10px;
 }
 
-.btn-masuk{
-    padding:8px 18px;
-    border-radius:20px;
-    border:1px solid #7f624f;
-    background:transparent;
-    color:#5d4336;
-    cursor:pointer;
+.btn-masuk {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #7f624f;
+    background: transparent;
+    color: #5d4336;
+    cursor: pointer;
 }
 
-.btn-daftar{
-    padding:8px 18px;
-    border-radius:20px;
-    border:none;
-    background:#73917d;
-    color:white;
-    cursor:pointer;
+.btn-daftar {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #73917d;
+    color: white;
+    cursor: pointer;
 }
 
-/* REGISTER */
-
-.register-section{
-    width:100%;
-    min-height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-
-    padding-top:20px;
+/* REGISTER SECTION */
+.register-section {
+    width: 100%;
+    min-height: calc(100vh - 100px); /* Menyesuaikan tinggi setelah dikurangi navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* DIUBAH ke center agar posisi box pas di tengah layar */
+    padding: 40px 20px;
 }
 
-.register-box{
-    width:100%;
-    max-width:430px;
-
-    text-align:center;
+.register-box {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
 }
 
-.register-box h1{
-    font-size:42px;
-    color:#4d2d23;
-
-    margin-bottom:20px;
+.register-box h1 {
+    font-size: 42px;
+    color: #4d2d23;
+    margin-bottom: 20px;
 }
 
-.register-desc{
-    font-size:17px;
-    color:#4f5b58;
-
-    line-height:1.7;
-
-    margin-bottom:30px;
+.register-desc {
+    font-size: 17px;
+    color: #4f5b58;
+    line-height: 1.7;
+    margin-bottom: 30px;
 }
 
 /* SOCIAL LOGIN */
-
-.social-login{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-
-    margin-bottom:35px;
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
 }
 
 .google-btn,
-.facebook-btn{
-    width:100%;
-
-    padding:14px;
-
-    border-radius:10px;
-
-    text-decoration:none;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    gap:10px;
-
-    font-size:18px;
-    font-weight:600;
-
-    color:#333;
+.facebook-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    transition: background 0.2s;
 }
 
-.google-btn{
-    background:#dbe9e7;
+.google-btn {
+    background: #dbe9e7;
 }
 
-.facebook-btn{
-    background:#cfe0de;
+.facebook-btn {
+    background: #cfe0de;
 }
+
+.google-btn:hover { background: #cbdcd9; }
+.facebook-btn:hover { background: #bececc; }
 
 .google-btn img,
-.facebook-btn img{
-    width:22px;
-    height:22px;
+.facebook-btn img {
+    width: 22px;
+    height: 22px;
 }
 
 /* ATAU */
-
-.separator{
-    display:flex;
-    align-items:center;
-    gap:15px;
-
-    margin:10px 0 30px;
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0 30px;
 }
 
-.separator span{
-    flex:1;
-    height:1px;
-    background:#cbb8ae;
+.separator span {
+    flex: 1;
+    height: 1px;
+    background: #cbb8ae;
 }
 
-.separator p{
-    color:#666;
-    font-size:18px;
+.separator p {
+    color: #666;
+    font-size: 18px;
 }
 
-/* FORM */
-
-.register-box form{
-    display:flex;
-    flex-direction:column;
-    text-align:left;
+/* FORM (Tetap sama, otomatis merapikan Email & Password) */
+.register-box form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
-.register-box label{
-    font-size:18px;
-    margin-bottom:8px;
-
-    color:#394240;
+.register-box label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #394240;
 }
 
-.register-box input{
-    width:100%;
-
-    padding:13px 18px;
-
-    border:1.5px solid #c9b2aa;
-    border-radius:10px;
-
-    font-size:16px;
-
-    margin-bottom:22px;
-
-    background:transparent;
+.register-box input {
+    width: 100%;
+    padding: 13px 18px;
+    border: 1.5px solid #c9b2aa;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 22px;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.2s;
 }
 
-.register-box button{
-    width:100%;
+.register-box input:focus {
+    border-color: #6a2626; /* Efek warna border berubah saat kolom diklik */
+}
 
-    padding:14px;
+.register-box button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #6a2626;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
 
-    border:none;
-    border-radius:10px;
-
-    background:#6a2626;
-    color:white;
-
-    font-size:18px;
-    font-weight:600;
-
-    cursor:pointer;
+.register-box button:hover {
+    background: #541e1e; /* Efek warna tombol agak gelap saat kursor menempel */
 }

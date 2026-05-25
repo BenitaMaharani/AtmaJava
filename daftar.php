@@ -7,8 +7,8 @@ if (session_status() === PHP_SESSION_NONE) {
 
 if (isset($_POST['register'])) {
 
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']); // Tambahkan ini
+    // Mengambil data email dan password dari form
+    $email = mysqli_real_escape_string($conn, $_POST['email']); 
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
     // Cek dulu apakah email sudah pernah didaftarkan
@@ -18,23 +18,19 @@ if (isset($_POST['register'])) {
         exit;
     }
 
-    // Masukkan email ke dalam query INSERT
-    $query = "INSERT INTO users (username, email, password)
-              VALUES ('$username', '$email', '$password')";
+    // Masukkan data ke dalam query INSERT (Hanya email dan password)
+    $query = "INSERT INTO users (email, password)
+              VALUES ('$email', '$password')";
 
     if (mysqli_query($conn, $query)) {
-
         echo "
         <script>
             alert('Pendaftaran berhasil!');
-            window.location.href='index.php';
+            window.location.href='masuk.php';
         </script>
         ";
-
         exit;
-    }
-
-    else{
+    } else {
         $error = true;
     }
 }
@@ -70,48 +66,33 @@ if (isset($_POST['register'])) {
             </p>
 
             <div class="social-login">
-
                 <a href="#" class="google-btn">
-
                     <img src="assets/icon_masuk/google.png">
-
                     Google
-
                 </a>
-
                 <a href="#" class="facebook-btn">
-
                     <img src="assets/icon_masuk/facebook.png">
-
                     Facebook
-
                 </a>
-
             </div>
 
             <div class="separator">
-
                 <span></span>
-
                 <p>ATAU</p>
-
                 <span></span>
-
             </div>
 
             <form action="" method="POST">
                 
-            <label>Email</label>
-
+                <label>Email</label>
                 <input
                     type="email"
                     name="email"
                     placeholder="Masukkan Email"
                     required
-
                 >
-                <label>Password</label>
 
+                <label>Password</label>
                 <input
                     type="password"
                     name="password"
