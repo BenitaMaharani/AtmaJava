@@ -26,7 +26,7 @@ if (isset($_POST['register'])) {
         echo "
         <script>
             alert('Pendaftaran berhasil!');
-            window.location.href='masuk.php';
+            window.location.href='index.php';
         </script>
         ";
         exit;

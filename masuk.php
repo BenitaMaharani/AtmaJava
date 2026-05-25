@@ -7,32 +7,40 @@ if (session_status() === PHP_SESSION_NONE) {
 
 if (isset($_POST['login'])) {
 
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
+    // 1. Ambil data Email dari input form
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = $_POST['password'];
 
-    $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username'");
+    // 2. Cari user berdasarkan Email (bukan username)
+    $result = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
 
     if (mysqli_num_rows($result) === 1) {
 
         $row = mysqli_fetch_assoc($result);
 
+        // 3. Verifikasi password hash
         if (password_verify($password, $row['password'])) {
 
             $_SESSION['login'] = true;
-            $_SESSION['username'] = $row['username'];
             $_SESSION['user_id'] = $row['id'];
+            $_SESSION['email'] = $row['email'];
+            
+            // Mengambil username dari DB (jika di DB ada kolom username, jika tidak ada bisa pakai email)
+            // Di sini kita amankan agar tidak error jika kolom username kosong di DB
+            $display_name = isset($row['username']) ? $row['username'] : $row['email'];
+            $_SESSION['username'] = $display_name;
 
             echo "
             <script>
-                alert('Selamat Datang, $username!');
+                alert('Selamat Datang Kembali!');
                 window.location.href='index.php';
             </script>
             ";
-
             exit;
         }
     }
 
+    // Jika gagal, set error jadi true
     $error = true;
 }
 ?>
@@ -66,24 +74,22 @@ if (isset($_POST['login'])) {
             </p>
 
             <?php if(isset($error)) : ?>
-                <p class="error-text">
-                    Username atau Password salah!
+                <p class="error-text" style="color: red; margin-bottom: 15px;">
+                    Email atau Password salah!
                 </p>
             <?php endif; ?>
 
             <form action="" method="POST">
 
-                <label>Username</label>
-
+                <label>Email</label>
                 <input 
-                    type="text"
-                    name="username"
-                    placeholder="Masukkan username"
+                    type="email" 
+                    name="email"
+                    placeholder="Masukkan email Anda"
                     required
                 >
 
                 <label>Password</label>
-
                 <input 
                     type="password"
                     name="password"
