@@ -9,6 +9,7 @@ body{
     background:#eef0e3;
 }
 
+
 /*NAVBAR*/
 .navbar{
     width:95%;
@@ -26,6 +27,34 @@ body{
     width:55px;
 }
 
+.menu li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+}
+
+/* garis bawah */
+.menu li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #2f5d50;
+    transition: 0.3s;
+}
+
+/* saat hover */
+.menu li a:hover::after{
+    width: 100%;
+}
+
+/* halaman aktif */
+.menu li a.active::after{
+    width: 100%;
+}
 .menu{
     display:flex;
     list-style:none;
@@ -143,18 +172,12 @@ body{
 
     bottom:25px;
     right:25px;
-
-    background:rgba(255,255,255,0.80);
-
+    background: rgb(238 240 227);;
     backdrop-filter:blur(6px);
-
     padding:18px 28px;
-
     border-radius:20px;
-
     display:flex;
     gap:35px;
-
     z-index:2;
 }
 

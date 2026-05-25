@@ -9,12 +9,14 @@ if (session_status() === PHP_SESSION_NONE) {
             <img src="assets/img_logo/logoatma.png" alt="logo Atma Java">
         </a>
     </div>
-
     <ul class="menu">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="jelajah.php">Jelajah</a></li>
-        <li><a href="artikel.php">Artikel</a></li>
-        <li><a href="about.php">About Us</a></li>
+        <li><a href="index.php" class="<?= ($current_page == 'index.php') ? 'active' : ''; ?>">Home</a></li>
+
+        <li><a href="jelajah.php" class="<?= ($current_page == 'jelajah.php') ? 'active' : ''; ?>">Jelajah</a></li>
+
+        <li><a href="artikel.php" class="<?= ($current_page == 'artikel.php') ? 'active' : ''; ?>">Artikel</a></li>
+
+        <li><a href="about.php" class="<?= ($current_page == 'about.php') ? 'active' : ''; ?>">About Us</a></li>
     </ul>
 
     <div class="nav-button">
