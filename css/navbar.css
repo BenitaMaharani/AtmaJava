@@ -1,0 +1,25 @@
+.menu li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.menu li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #2f5d50;
+    transition: 0.3s;
+}
+
+.menu li a:hover::after{
+    width: 100%;
+}
+
+.menu li a.active::after{
+    width: 100%;
+}
