@@ -1,36 +1,34 @@
-/* --- UPDATE BAGIAN INI DI NAVBAR.CSS --- */
+/* --- GANTI KODE NAV MENU KAMU DENGAN INI --- */
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px; /* Beri jarak antar menu */
+}
 
 .menu li a {
-    position: relative;
     text-decoration: none;
-    color: black;
-    padding-bottom: 5px;
-    display: inline-block; /* PENTING: Supaya padding dan absolute ::after terbaca sempurna */
+    color: #000000;
+    font-size: 16px;
+    padding: 8px 0; /* Memberikan ruang klik dan jarak ke garis */
+    display: inline-block;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent; /* Garis default transparan/tidak terlihat */
 }
 
-/* Base style untuk garis bawah (keadaan default tersembunyi dengan width 0%) */
-.menu li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background: #2f5d50;
-    transition: width 0.3s ease; /* Animasi transisi garis lebar */
+/* Efek saat kursor diarahkan (hover) */
+.menu li a:hover {
+    border-bottom: 2px solid #2f5d50; 
 }
 
-/* Ketika di-hover, panjangkan garis jadi 100% */
-.menu li a:hover::after {
-    width: 100%;
-}
-
-/* Ketika class .active aktif lewat PHP, kunci garis agar tetap 100% */
-.menu li a.active::after {
-    width: 100% !important; /* !important memastikan gaya ini menang dari selector lain */
-}
-
-/* Tambahan opsional: mengubah warna teks Home menjadi sedikit tebal saat aktif */
+/* KETIKA AKTIF: Garis bawah langsung dikunci agar muncul */
 .menu li a.active {
-    font-weight: 600; 
+    border-bottom: 2px solid #2f5d50 !important;
+    font-weight: bold; /* Membuat teks sedikit tebal sebagai penanda */
 }
