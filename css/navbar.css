@@ -1,10 +1,14 @@
+/* --- UPDATE BAGIAN INI DI NAVBAR.CSS --- */
+
 .menu li a {
     position: relative;
     text-decoration: none;
     color: black;
     padding-bottom: 5px;
+    display: inline-block; /* PENTING: Supaya padding dan absolute ::after terbaca sempurna */
 }
 
+/* Base style untuk garis bawah (keadaan default tersembunyi dengan width 0%) */
 .menu li a::after {
     content: '';
     position: absolute;
@@ -13,11 +17,20 @@
     width: 0%;
     height: 2px;
     background: #2f5d50;
-    transition: 0.3s;
+    transition: width 0.3s ease; /* Animasi transisi garis lebar */
 }
 
-/* Gabungkan keadaan hover dan active agar menulis kodenya lebih efisien */
-.menu li a:hover::after,
+/* Ketika di-hover, panjangkan garis jadi 100% */
+.menu li a:hover::after {
+    width: 100%;
+}
+
+/* Ketika class .active aktif lewat PHP, kunci garis agar tetap 100% */
 .menu li a.active::after {
-    width: 100% !important; /* Gunakan !important jika masih ada bentrokan dari framework/reset CSS lain */
+    width: 100% !important; /* !important memastikan gaya ini menang dari selector lain */
+}
+
+/* Tambahan opsional: mengubah warna teks Home menjadi sedikit tebal saat aktif */
+.menu li a.active {
+    font-weight: 600; 
 }
