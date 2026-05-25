@@ -110,6 +110,15 @@ if (isset($_POST['register'])) {
                     required
                 >
 
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Masukkan Email"
+                    required
+
+                >
                 <label>Password</label>
 
                 <input
@@ -120,7 +129,7 @@ if (isset($_POST['register'])) {
                 >
 
                 <button type="submit" name="register">
-                    Masuk
+                    Daftar
                 </button>
 
             </form>
