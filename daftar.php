@@ -100,17 +100,8 @@ if (isset($_POST['register'])) {
             </div>
 
             <form action="" method="POST">
-
-                <label>Username</label>
-
-                <input
-                    type="text"
-                    name="username"
-                    placeholder="Masukkan username"
-                    required
-                >
-
-                <label>Email</label>
+                
+            <label>Email</label>
 
                 <input
                     type="email"
