@@ -66,8 +66,9 @@ body {
 /* --- KARTU KONTEN --- */
 .main-card {
     background-color: #ebeee0; /* Warna krem figma */
-    max-width: 800px;
-    margin: 30px auto;
+    width: 92%;
+    max-width: 1400px;
+    margin: 25px auto;
     border-radius: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);
     overflow: hidden;
@@ -75,7 +76,7 @@ body {
 }
 
 .image-header {
-    height: 400px;
+    height: 500px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -97,7 +98,7 @@ body {
 }
 
 .content-container {
-    padding: 0 45px;
+    padding: 0 60px;
 }
 
 .mountain-title {
@@ -120,10 +121,11 @@ body {
 
 /* --- STYLING ISI TEXT DARI DATABASE --- */
 .article-body {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.9;
     color: #2b2b2b;
     text-align: justify;
+    width: 100%;
 }
 
 .section-block {
@@ -214,7 +216,7 @@ footer{
         rgba(60,35,22,0.92)
     ),
 
-    url('..assets/img_bg/bg_page.png');
+    url('../assets/img_bg/bg_page.png');
 
     background-size:cover;
     background-position:center;
