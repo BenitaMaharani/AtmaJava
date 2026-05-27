@@ -2,7 +2,12 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
+
+$current_page = basename($_SERVER['PHP_SELF']);
 ?>
+
+<link rel="stylesheet" href="assets/css/navbar.css">
+
 <nav class="navbar">
     <div class="logo">
         <a href="index.php">
@@ -10,28 +15,55 @@ if (session_status() === PHP_SESSION_NONE) {
         </a>
     </div>
     <ul class="menu">
-        <li><a href="index.php" class="<?= ($current_page == 'index.php') ? 'active' : ''; ?>">Home</a></li>
+        <li>
+            <a href="index.php" class="<?= ($current_page == 'index.php' || $current_page == '' || $current_page == 'index') ? 'active' : ''; ?>">
+                Home
+            </a>
+        </li>
 
-        <li><a href="jelajah.php" class="<?= ($current_page == 'jelajah.php') ? 'active' : ''; ?>">Jelajah</a></li>
+        <li>
+            <a href="jelajah.php" class="<?= ($current_page == 'jelajah.php') ? 'active' : ''; ?>">
+                Jelajah
+            </a>
+        </li>
 
-        <li><a href="artikel.php" class="<?= ($current_page == 'artikel.php') ? 'active' : ''; ?>">Artikel</a></li>
+        <li>
+            <a href="artikel.php" class="<?= ($current_page == 'artikel.php') ? 'active' : ''; ?>">
+                Artikel
+            </a>
+        </li>
 
-        <li><a href="about.php" class="<?= ($current_page == 'about.php') ? 'active' : ''; ?>">About Us</a></li>
+        <li>
+            <a href="about.php" class="<?= ($current_page == 'about.php') ? 'active' : ''; ?>">
+                About Us
+            </a>
+        </li>
+
     </ul>
 
     <div class="nav-button">
     <?php if(isset($_SESSION['user_id'])): ?>
         <div class="user-menu">
-            <span style="margin-right: 10px; font-size: 14px;">Halo, <b><?= $_SESSION['username']; ?></b></span>
-            <a href="logout.php" class="btn-masuk" onclick="return confirm('Yakin ingin keluar?')">Keluar</a>
+            <span style="margin-right: 10px; font-size: 14px;">
+                Halo, <b><?= $_SESSION['username']; ?></b>
+            </span>
+
+            <a href="logout.php" class="btn-masuk"
+               onclick="return confirm('Yakin ingin keluar?')">
+               Keluar
+            </a>
         </div>
+
     <?php else: ?>
+
         <a href="masuk.php" style="text-decoration: none;">
             <button class="btn-masuk">Masuk</button>
         </a>
+
         <a href="daftar.php" style="text-decoration: none;">
             <button class="btn-daftar">Daftar</button>
         </a>
+
     <?php endif; ?>
     </div>
 </nav>
