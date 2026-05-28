@@ -364,7 +364,7 @@ footer{
         rgba(60,35,22,0.92)
     ),
 
-    url('..assets/img_bg/bg_page.png');
+    url('../assets/img_bg/bg_page.png');
 
     background-size:cover;
     background-position:center;
@@ -561,8 +561,10 @@ footer::before{
     }
 
     footer{
-        flex-direction:column;
+        grid-template-columns:1fr;
         padding:40px 30px;
+        gap:40px;
+
     }
 
 }
