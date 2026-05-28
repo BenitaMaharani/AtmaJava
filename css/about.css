@@ -277,7 +277,9 @@ footer{
     linear-gradient(
         rgba(74,43,27,0.88),
         rgba(60,35,22,0.92)
-    ),;
+    ),
+
+    url('..assets/img_bg/bg_page.png');
 
     background-size:cover;
     background-position:center;
