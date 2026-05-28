@@ -88,8 +88,9 @@ body{
     font-size: 34px;
     font-weight: 700;
     line-height: 42px;
+    margin-bottom: 35px;
     margin: 0;
-    padding: 150;
+    padding: 0;
     display: block;
 }
 
