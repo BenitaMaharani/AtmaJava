@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: #f0f2eb;
+    /* PERBAIKAN: Memasang gambar latar belakang penuh pada body */
+    background: url('../assets/img_bg/bg_page.png') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 60px;
 }
@@ -92,13 +94,18 @@ body {
     cursor: pointer;
 }
 
-/* --- KARTU KONTEN --- */
+/* --- KARTU KONTEN (EFEK GLASSMORPHISM KACA ES) --- */
 .main-card {
-    background-color: #ebeee0; /* Warna krem figma */
-    max-width: 800px;
-    margin: 30px auto;
+    /* PERBAIKAN: Mengubah warna solid krem menjadi putih transparan tipis + blur */
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    
+    max-width: 900px; /* Diperlebar sedikit agar lebih seimbang seperti foto kedua */
+    margin: 40px auto;
     border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
     overflow: hidden;
     padding-bottom: 40px;
 }
@@ -132,17 +139,17 @@ body {
 .mountain-title {
     font-family: 'Georgia', serif;
     text-align: center;
-    font-size: 36px;
-    color: #2a3d30;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    font-size: 38px;
+    color: #f6f6ed; /* PERBAIKAN: Mengubah judul teks menjadi krem cerah */
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .tagline {
     font-style: italic;
     text-align: center;
-    color: #555;
-    font-size: 15px;
+    color: #f6f6ed; /* PERBAIKAN: Mengubah kutipan/tagline menjadi krem cerah */
+    font-size: 24px; /* Diperbesar sedikit agar sesuai gaya foto kedua */
     margin-bottom: 35px;
     line-height: 1.5;
 }
@@ -151,23 +158,24 @@ body {
 .article-body {
     font-size: 14px;
     line-height: 1.7;
-    color: #2b2b2b;
+    color: #e2ded5; /* PERBAIKAN: Mengubah teks isi paragraf menjadi abu-terang cerah */
     text-align: justify;
 }
 
 .section-block {
     margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15); /* Dipertipis transparansinya agar serasi */
     padding: 20px;
     border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .section-block h2 {
     font-family: 'Georgia', serif;
     font-size: 18px;
-    color: #1e2d22;
+    color: #ffffff; /* PERBAIKAN: Sub-judul di dalam artikel dipadukan warna putih murni */
     margin-bottom: 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 6px;
 }
 
@@ -198,250 +206,184 @@ body {
 }
 
 .pagination {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 10px 25px;
     border-radius: 30px;
     display: flex;
     align-items: center;
     gap: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .pagination a {
     text-decoration: none;
-    color: #777;
+    color: #ccc;
     font-size: 15px;
     font-weight: bold;
     transition: all 0.2s;
 }
 
 .pagination a.active {
-    color: #1a2e1b;
-    border-bottom: 2px solid #1a2e1b;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 2px;
 }
 
 .pagination a:hover {
-    color: #000;
+    color: #ffffff;
 }
 
 /*FOOTER*/
-footer{
-    width:100%;
-
-    padding:45px 65px 35px;
-
-    display:grid;
+footer {
+    width: 100%;
+    padding: 45px 65px 35px;
+    display: grid;
     grid-template-columns: 1.2fr 1fr 0.8fr;
-    gap:60px;
-
-    position:relative;
-
-    background:
-    linear-gradient(
-        rgba(74,43,27,0.88),
-        rgba(60,35,22,0.92)
-    ),
-
-    url('../assets/img_bg/bg_page.png');
-
-    background-size:cover;
-    background-position:center;
-
-    backdrop-filter:blur(4px);
-
-    color:white;
+    gap: 60px;
+    position: relative;
+    background: linear-gradient(rgba(74,43,27,0.88), rgba(60,35,22,0.92)), url('../assets/img_bg/bg_page.png');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(4px);
+    color: white;
 }
 
-footer::before{
-
-    content:'';
-
-    position:absolute;
-    inset:0;
-
-    background:rgba(255,255,255,0.03);
-
-    pointer-events:none;
+footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.03);
+    pointer-events: none;
 }
 
-.footer-left{
-    position:relative;
-    z-index:2;
+.footer-left {
+    position: relative;
+    z-index: 2;
 }
 
-.footer-logo{
-    display:flex; 
-    align-items:center;
-    gap:14px;
-    margin-bottom:18px;
+.footer-logo {
+    display: flex; 
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
 }
 
-.footer-logo img{
+.footer-logo img {
     width: 62px;
     height: 62px;
 }
 
-.footer-logo h2{
-    font-size:42px;
-
-    font-family:serif;
-    font-weight:500;
-    font-style:italic;
+.footer-logo h2 {
+    font-size: 42px;
+    font-family: serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
-.footer-left p{
-    width:290px;
-
-    font-size:13px;
-    line-height:1.9;
-
-    color:#ebe4de;
+.footer-left p {
+    width: 290px;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #ebe4de;
 }
 
-.foot-center{
-    position:relative;
-    z-index:2
+.foot-center {
+    position: relative;
+    z-index: 2;
 }
 
-.footer-contact{
-    display:flex;
-    gap:14px;
-
-    margin-bottom:24px;
+.footer-contact {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 24px;
 }
 
-.footer-contact i{
-
-    font-size:18px;
-    margin-top:4px;
-
-    color:#f2f2f2;
+.footer-contact i {
+    font-size: 18px;
+    margin-top: 4px;
+    color: #f2f2f2;
 }
 
-.footer-contact p{
-    font-size:13px;
-    line-height:1.9;
-
-    color:#f4f0ec;
+.footer-contact p {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #f4f0ec;
 }
 
-.footer-menu{
-
-    display:flex;
-    justify-content:space-between;
-
-    margin-top:25px;
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
 }
-
 
 /* tiap kolom */
-
-.footer-column h3{
-
-    font-size:15px;
-    margin-bottom:14px;
-
-    position:relative;
+.footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 14px;
+    position: relative;
 }
-
 
 /* garis bawah */
-.footer-column h3::after{
-
-    content:'';
-
-    width:85px;
-    height:1px;
-
-    background:rgba(255,255,255,0.5);
-
-    position:absolute;
-    left:0;
-    bottom:-8px;
-
+.footer-column h3::after {
+    content: '';
+    width: 85px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
 }
 
-.footer-column p{
-
-    margin-top:14px;
-
-    font-size:13px;
-    color:#f1ece7;
-
-    cursor:pointer;
-
-    transition:0.3s;
+.footer-column p {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #f1ece7;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.footer-column p:hover{
+.footer-column p:hover {
+    transform: translateX(4px);
+    opacity: 0.8;
+}
 
-    transform:translateX(4px);
-    opacity:0.8;
-}/* Menghilangkan warna biru default dan garis bawah pada link footer */
 .footer-column p a {
     text-decoration: none;
-    color: inherit; /* Mengikuti warna p (krem) */
+    color: inherit;
     display: block;
     width: 100%;
 }
 
-/* Supaya hover-nya tetap jalan meskipun ada di dalam tag <a> */
 .footer-column p:hover a {
     color: #ffffff;
 }
 
-
-.copyright{
-    background:#f5f2ea;
-
-    padding:14px 25px;
-
-    font-size:12px;
-
-    color:#5d4a3d;
+.copyright {
+    background: #f5f2ea;
+    padding: 14px 25px;
+    font-size: 12px;
+    color: #5d4a3d;
 }
 
-/*RESPONSIVE*/
-@media(max-width:768px){
-
-    .navbar{
-        flex-direction:column;
-        gap:20px;
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .menu{
-        flex-wrap:wrap;
-        justify-content:center;
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .hero{
-        height:650px;
+    /* PERBAIKAN RESPONSIVE GRID FOOTER */
+    footer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 30px;
     }
-
-    .hero-text{
-        left:20px;
-        top:60px;
-    }
-
-    .hero-text h1{
-        font-size:38px;
-    }
-
-    .hero-text p{
-        width:90%;
-    }
-
-    .info-box{
-        flex-direction:column;
-        right:20px;
-        left:20px;
-        bottom:20px;
-    }
-
-    footer{
-        flex-direction:column;
-        padding:40px 30px;
-    }
-
 }
