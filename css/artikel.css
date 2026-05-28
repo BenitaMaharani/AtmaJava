@@ -66,14 +66,10 @@ body{
 .hero{
     width:95%;
     height:520px;
-
     margin:auto;
-
     position:relative;
     overflow:hidden;
-
     border-radius:25px;
-
     background-image:
     linear-gradient(
         rgba(0,0,0,0.30),
@@ -84,7 +80,6 @@ body{
 
     background-size:cover;
     background-position:center;
-
     animation:slideBackground 10s infinite ease-in-out;
 }
 
