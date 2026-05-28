@@ -102,24 +102,24 @@ body {
 
 
 /* Quote Box Cokelat Tua di Sisi Kiri */
-.quote-box {
+.quote-box{
+
     width: 240px;
     min-width: 240px;
     background: #4a2b1b; /* Cokelat tua figma */
-    border-radius: 14px;
-    padding: 25px 20px;
+    border-radius: 20px;
+    padding: 30px 20px;
     font-size: 14px;
     line-height: 1.8;
     color: #f1e7de; /* Teks krem terang */
     text-align: center;
     font-weight: 500;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-
-    container{
+}
+.container{
     display:flex;
     align-items:stretch;
 }
-
 /* Isi Teks Artikel di Sisi Kanan */
 .isi-artikel, .isi-text {
     flex: 1;
