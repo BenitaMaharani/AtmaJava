@@ -198,16 +198,16 @@ body{
 /*TITLE*/
 .title-section{
     width:100%;
-    
-    margin-top:55px;
-    margin-bottom:35px;
 
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
 
     text-align:center;
+
+    margin-top:55px;
+    margin-bottom:45px;
 }
 
 .title-section h2{
@@ -216,8 +216,7 @@ body{
     font-size:34px;
     font-weight:700;
 
-    line-height:1;
-    letter-spacing:-1px;
+    line-height:42px;
 
     margin:0;
     padding:0;
@@ -226,16 +225,16 @@ body{
 }
 
 .title-section p{
-    width:100%;
-    max-width:650px;
-
-    margin-top:14px;
-    padding:0;
+    margin-top:12px;
 
     color:#7c7c7c;
 
     font-size:14px;
-    line-height:1.6;
+    font-weight:400;
+
+    line-height:24px;
+
+    max-width:700px;
 }
 
 /* ================= LINE (GARIS PETA) ================= */
