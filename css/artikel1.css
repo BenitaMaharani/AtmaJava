@@ -100,6 +100,7 @@ body {
     align-items: flex-start;
 }
 
+
 /* Quote Box Cokelat Tua di Sisi Kiri */
 .quote-box {
     width: 240px;
@@ -113,6 +114,10 @@ body {
     text-align: center;
     font-weight: 500;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+    .container{
+    display:flex;
+    align-items:stretch;
 }
 
 /* Isi Teks Artikel di Sisi Kanan */
@@ -282,9 +287,7 @@ footer{
     linear-gradient(
         rgba(74,43,27,0.88),
         rgba(60,35,22,0.92)
-    ),
-
-    url('../assets/img_bg/bg_page.png');
+    ),;
 
     background-size:cover;
     background-position:center;
