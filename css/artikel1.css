@@ -1,26 +1,30 @@
 /* ================= RESET & BASE ================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-body {
-    background: #f3f0e7; /* Background utama krem hangat */
-    color: #3d2d24;
+body{
+    background:#f3f0e7;
+    color:#3d2d24;
+    overflow-x:hidden;
 }
 
-/*NAVBAR*/
+/* ================= NAVBAR ================= */
 .navbar{
     width:95%;
     margin:20px auto;
     background:#f6f6ed;
     border-radius:30px;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     padding:12px 25px;
+
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
@@ -39,6 +43,11 @@ body {
     color:#3d332c;
     font-size:14px;
     font-weight:500;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    opacity:0.7;
 }
 
 .nav-button{
@@ -53,6 +62,7 @@ body {
     background:transparent;
     color:#5d4336;
     cursor:pointer;
+    transition:0.3s;
 }
 
 .btn-daftar{
@@ -62,223 +72,320 @@ body {
     background:#73917d;
     color:white;
     cursor:pointer;
+    transition:0.3s;
 }
 
-/* ================= HERO ARTIKEL (BANNER) ================= */
-.hero-artikel, .banner-artikel {
-    width: 90%;
-    margin: 25px auto 0;
+.btn-masuk:hover,
+.btn-daftar:hover{
+    transform:translateY(-2px);
 }
 
-.hero-artikel img, .banner-artikel img {
-    width: 100%;
-    height: auto;
-    max-height: 450px;
-    object-fit: cover;
-    border-radius: 22px;
-    display: block;
+/* ================= HERO / BANNER ================= */
+.hero-artikel,
+.banner-artikel{
+    width:90%;
+    margin:25px auto 0;
 }
 
-/* ================= DETAIL ARTIKEL CONTENT (UTAMA) ================= */
-.artikel-detail, .artikel-section {
-    width: 90%;
-    margin: auto;
-    padding: 40px 0;
+.hero-artikel img,
+.banner-artikel img{
+    width:100%;
+    height:auto;
+    max-height:450px;
+    object-fit:cover;
+    border-radius:22px;
+    display:block;
 }
 
-.artikel-detail h1, .judul-artikel {
-    font-size: 34px;
-    line-height: 1.4;
-    color: #3d2d24;
-    margin-bottom: 30px;
-    font-weight: 700;
+/* ================= DETAIL ARTIKEL ================= */
+.artikel-detail,
+.artikel-section{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
 }
 
-.artikel-content, .konten-artikel {
-    display: flex;
-    gap: 35px;
-    align-items: flex-start;
+/* Judul */
+.artikel-detail h1,
+.judul-artikel{
+    font-size:52px;
+    line-height:1.2;
+    color:#3d2d24;
+    margin-bottom:35px;
+    font-weight:700;
 }
 
-
-/* Quote Box Cokelat Tua di Sisi Kiri */
-.quote-box{
-
-    width: 240px;
-    min-width: 240px;
-    background: #4a2b1b; /* Cokelat tua figma */
-    border-radius: 20px;
-    padding: 30px 20px;
-    font-size: 14px;
-    line-height: 1.8;
-    color: #f1e7de; /* Teks krem terang */
-    text-align: center;
-    font-weight: 500;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-.container{
+/* Layout utama */
+.artikel-content,
+.konten-artikel{
     display:flex;
+    gap:35px;
+
     align-items:stretch;
 }
-/* Isi Teks Artikel di Sisi Kanan */
-.isi-artikel, .isi-text {
-    flex: 1;
-    font-size: 15px;
-    line-height: 2;
-    color: #333333;
-    text-align: justify;
+
+/* ================= QUOTE BOX ================= */
+.quote-box{
+    width:240px;
+    min-width:240px;
+
+    background:#4a2b1b;
+
+    border-radius:20px;
+
+    padding:35px 22px;
+
+    color:#f1e7de;
+
+    font-size:15px;
+    line-height:2;
+
+    text-align:center;
+    font-weight:500;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-/* Styling otomatis subjudul H3 dari database */
-.isi-artikel h3, .isi-text h3 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    color: #3d2d24;
-    font-size: 22px;
-    font-weight: 700;
+/* ================= ISI ARTIKEL ================= */
+.isi-artikel,
+.isi-text{
+    flex:1;
+
+    font-size:17px;
+    line-height:2;
+
+    color:#333;
 }
 
-/* Styling otomatis list poin dari database */
-.isi-artikel ul, .isi-text ul {
-    margin-left: 22px;
-    margin-bottom: 20px;
-    list-style-type: disc;
+/* Paragraf */
+.isi-artikel p,
+.isi-text p{
+    margin-bottom:20px;
 }
 
-.isi-artikel li, .isi-text li {
-    margin-bottom: 8px;
-    color: #444444;
+/* Heading otomatis dari database */
+.isi-artikel h2,
+.isi-text h2{
+    margin-top:35px;
+    margin-bottom:18px;
+
+    font-size:40px;
+    font-weight:700;
+
+    color:#3d2d24;
 }
 
-.isi-artikel strong, .isi-text strong {
-    color: #3d2d24;
-    font-weight: 700;
+.isi-artikel h3,
+.isi-text h3{
+    margin-top:30px;
+    margin-bottom:12px;
+
+    color:#3d2d24;
+
+    font-size:30px;
+    font-weight:700;
 }
 
-/* ================= STYLING KHUSUS ARTIKEL 2 & 3 ================= */
-.danger-text {
-    color: #a32a2a;
-    font-weight: 600;
-    margin-bottom: 4px;
+/* List */
+.isi-artikel ul,
+.isi-text ul{
+    margin-left:25px;
+    margin-bottom:25px;
 }
 
-.artikel-two-columns {
-    display: flex;
-    gap: 40px;
-    margin-top: 30px;
-    border-top: 1px solid #dcd6cd;
-    padding-top: 20px;
+.isi-artikel li,
+.isi-text li{
+    margin-bottom:10px;
+    line-height:1.9;
 }
 
-.artikel-two-columns .col {
-    flex: 1;
+/* Bold */
+.isi-artikel strong,
+.isi-text strong,
+.isi-artikel b,
+.isi-text b{
+    color:#3d2d24;
+    font-weight:700;
 }
 
-/* ================= SECTION ARTIKEL LAIN (Rekomendasi Card) ================= */
-.artikel-lain {
-    width: 100%;
-    background: #bfd2ca; /* Background hijau sage bawah */
-    padding: 50px 5% 60px;
-    margin-top: 40px;
+/* ================= KHUSUS ARTIKEL 2 KOLOM ================= */
+.artikel-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    margin-top:20px;
 }
 
-.artikel-lain h3, .text-lain {
-    color: #3d2d24;
-    margin-bottom: 30px;
-    font-size: 18px;
-    font-weight: 600;
+.artikel-grid div{
+    border-right:1px solid #cfc6bc;
+    padding-right:20px;
 }
 
-/* Grid Container untuk Card */
-.artikel-card-container, .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
+.artikel-grid div:last-child{
+    border-right:none;
 }
 
-/* Style Card Link */
-.artikel-card, .card {
-    background: #f5f2e8;
-    border: 2px solid #8b6a55;
-    border-radius: 18px;
-    padding: 10px;
-    text-decoration: none;
-    transition: 0.3s ease;
-    box-shadow: 5px 5px 0px #c8c1b5;
-    display: flex;
-    flex-direction: column;
+/* ================= DANGER TEXT ================= */
+.danger-text{
+    color:#a32a2a;
+    font-weight:600;
+    margin-bottom:4px;
 }
 
-.artikel-card:hover, .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 5px 8px 15px rgba(0,0,0,0.12);
+/* ================= ARTIKEL LAIN ================= */
+.artikel-lain{
+    width:100%;
+
+    background:#bfd2ca;
+
+    padding:50px 5% 60px;
+
+    margin-top:40px;
 }
 
-.artikel-card img, .card img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 14px;
-    display: block;
+.artikel-lain h3,
+.text-lain{
+    color:#3d2d24;
+
+    margin-bottom:30px;
+
+    font-size:22px;
+    font-weight:700;
 }
 
-/* Content dalam Card */
-.artikel-card-content, .card-content {
-    background: #4b3026; /* Background cokelat dalam card */
-    margin-top: 10px;
-    border-radius: 14px;
-    padding: 16px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    flex: 1;
+/* ================= CARD ================= */
+.artikel-card-container,
+.card-container{
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    max-width:1200px;
 }
 
-.artikel-card-content h4, .card-content h3 {
-    font-size: 15px;
-    line-height: 1.4;
-    font-weight: 500;
-    color: #ffffff;
+.artikel-card,
+.card{
+    background:#f5f2e8;
+
+    border:2px solid #8b6a55;
+
+    border-radius:18px;
+
+    padding:10px;
+
+    text-decoration:none;
+
+    transition:0.3s ease;
+
+    box-shadow:5px 5px 0px #c8c1b5;
+
+    display:flex;
+    flex-direction:column;
 }
 
-.card-content p {
-    display: none; /* Menyembunyikan ringkasan teks bawaan lama agar rapi */
+.artikel-card:hover,
+.card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:5px 8px 15px rgba(0,0,0,0.12);
 }
 
-/* Tombol Play Icon Bulat / Span Segitiga */
-.artikel-card-content button, .card-content span {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    background: #6f8b80; /* Hijau tombol figma */
-    border: none;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-    font-size: 12px;
+.artikel-card img,
+.card img{
+    width:100%;
+    height:170px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    display:block;
+}
+
+.artikel-card-content,
+.card-content{
+    background:#4b3026;
+
+    margin-top:10px;
+
+    border-radius:14px;
+
+    padding:16px;
+
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:15px;
+
+    flex:1;
+}
+
+.artikel-card-content h4,
+.card-content h3{
+    font-size:15px;
+    line-height:1.5;
+    font-weight:500;
+    color:white;
+}
+
+.card-content p{
+    display:none;
+}
+
+/* Tombol */
+.artikel-card-content button,
+.card-content span{
+    width:40px;
+    height:40px;
+
+    min-width:40px;
+
+    background:#6f8b80;
+
+    border:none;
+
+    border-radius:10px;
+
+    color:white;
+
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:0.3s;
+
+    font-size:12px;
 }
 
 .artikel-card:hover .artikel-card-content button,
-.card:hover .card-content span {
-    background: #577066;
-    transform: scale(1.05);
+.card:hover .card-content span{
+    background:#577066;
+    transform:scale(1.05);
 }
 
-/*FOOTER*/
+/* ================= FOOTER ================= */
 footer{
     width:100%;
 
     padding:45px 65px 35px;
 
     display:grid;
-    grid-template-columns: 1.2fr 1fr 0.8fr;
+    grid-template-columns:1.2fr 1fr 0.8fr;
+
     gap:60px;
 
     position:relative;
@@ -287,18 +394,15 @@ footer{
     linear-gradient(
         rgba(74,43,27,0.88),
         rgba(60,35,22,0.92)
-    ),;
+    );
 
     background-size:cover;
     background-position:center;
-
-    backdrop-filter:blur(4px);
 
     color:white;
 }
 
 footer::before{
-
     content:'';
 
     position:absolute;
@@ -309,27 +413,31 @@ footer::before{
     pointer-events:none;
 }
 
-.footer-left{
+.footer-left,
+.foot-center{
     position:relative;
     z-index:2;
 }
 
 .footer-logo{
-    display:flex; 
+    display:flex;
     align-items:center;
+
     gap:14px;
+
     margin-bottom:18px;
 }
 
 .footer-logo img{
-    width: 62px;
-    height: 62px;
+    width:62px;
+    height:62px;
 }
 
 .footer-logo h2{
     font-size:42px;
 
     font-family:serif;
+
     font-weight:500;
     font-style:italic;
 }
@@ -343,11 +451,6 @@ footer::before{
     color:#ebe4de;
 }
 
-.foot-center{
-    position:relative;
-    z-index:2
-}
-
 .footer-contact{
     display:flex;
     gap:14px;
@@ -356,7 +459,6 @@ footer::before{
 }
 
 .footer-contact i{
-
     font-size:18px;
     margin-top:4px;
 
@@ -371,28 +473,21 @@ footer::before{
 }
 
 .footer-menu{
-
     display:flex;
     justify-content:space-between;
 
     margin-top:25px;
 }
 
-
-/* tiap kolom */
-
 .footer-column h3{
-
     font-size:15px;
+
     margin-bottom:14px;
 
     position:relative;
 }
 
-
-/* garis bawah */
 .footer-column h3::after{
-
     content:'';
 
     width:85px;
@@ -401,16 +496,16 @@ footer::before{
     background:rgba(255,255,255,0.5);
 
     position:absolute;
+
     left:0;
     bottom:-8px;
-
 }
 
 .footer-column p{
-
     margin-top:14px;
 
     font-size:13px;
+
     color:#f1ece7;
 
     cursor:pointer;
@@ -419,23 +514,23 @@ footer::before{
 }
 
 .footer-column p:hover{
-
     transform:translateX(4px);
     opacity:0.8;
-}/* Menghilangkan warna biru default dan garis bawah pada link footer */
-.footer-column p a {
-    text-decoration: none;
-    color: inherit; /* Mengikuti warna p (krem) */
-    display: block;
-    width: 100%;
 }
 
-/* Supaya hover-nya tetap jalan meskipun ada di dalam tag <a> */
-.footer-column p:hover a {
-    color: #ffffff;
+.footer-column p a{
+    text-decoration:none;
+    color:inherit;
+
+    display:block;
+    width:100%;
 }
 
+.footer-column p:hover a{
+    color:#ffffff;
+}
 
+/* ================= COPYRIGHT ================= */
 .copyright{
     background:#f5f2ea;
 
@@ -446,7 +541,30 @@ footer::before{
     color:#5d4a3d;
 }
 
-/*RESPONSIVE*/
+/* ================= RESPONSIVE ================= */
+@media(max-width:992px){
+
+    .artikel-content,
+    .konten-artikel{
+        flex-direction:column;
+    }
+
+    .quote-box{
+        width:100%;
+        min-width:100%;
+    }
+
+    .artikel-grid{
+        grid-template-columns:1fr;
+    }
+
+    .artikel-grid div{
+        border-right:none;
+        border-bottom:1px solid #cfc6bc;
+        padding-bottom:20px;
+    }
+}
+
 @media(max-width:768px){
 
     .navbar{
@@ -459,33 +577,28 @@ footer::before{
         justify-content:center;
     }
 
-    .hero{
-        height:650px;
+    .artikel-detail h1,
+    .judul-artikel{
+        font-size:36px;
     }
 
-    .hero-text{
-        left:20px;
-        top:60px;
+    .isi-artikel,
+    .isi-text{
+        font-size:15px;
     }
 
-    .hero-text h1{
-        font-size:38px;
+    .isi-artikel h2,
+    .isi-text h2{
+        font-size:30px;
     }
 
-    .hero-text p{
-        width:90%;
-    }
-
-    .info-box{
-        flex-direction:column;
-        right:20px;
-        left:20px;
-        bottom:20px;
+    .isi-artikel h3,
+    .isi-text h3{
+        font-size:24px;
     }
 
     footer{
-        flex-direction:column;
+        grid-template-columns:1fr;
         padding:40px 30px;
     }
-
 }
