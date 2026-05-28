@@ -320,7 +320,7 @@ body{
 .quotes{
     width:100%;
     padding:90px 20px 0;
-    background:url('assets/img/bg-footer.png');
+    background:url('../assets/img_bg/bg_page.png');
     background-size:cover;
     background-position:center;
     position: relative;
