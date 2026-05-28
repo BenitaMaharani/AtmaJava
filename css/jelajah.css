@@ -198,39 +198,44 @@ body{
 /*TITLE*/
 .title-section{
     width:100%;
-    margin-top:48px;
+    
+    margin-top:55px;
+    margin-bottom:35px;
 
     display:flex;
     flex-direction:column;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 
     text-align:center;
 }
 
 .title-section h2{
-    color:rgb(79, 53, 39);
+    color:#4f3527;
 
     font-size:34px;
     font-weight:700;
 
-    line-height:1.1;
-    letter-spacing:-0.5px;
+    line-height:1;
+    letter-spacing:-1px;
 
-    margin:0 0 12px 0;
+    margin:0;
+    padding:0;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display:block;
 }
 
 .title-section p{
-    color:rgb(102, 102, 102);
+    width:100%;
+    max-width:650px;
+
+    margin-top:14px;
+    padding:0;
+
+    color:#7c7c7c;
 
     font-size:14px;
-    line-height:1.7;
-
-    margin:0;
+    line-height:1.6;
 }
 
 /* ================= LINE (GARIS PETA) ================= */
