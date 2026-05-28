@@ -284,7 +284,7 @@ footer{
         rgba(60,35,22,0.92)
     ),
 
-    url('assets/img/bg-footer.png');
+    url('../assets/img_bg/bg_page.png');
 
     background-size:cover;
     background-position:center;
