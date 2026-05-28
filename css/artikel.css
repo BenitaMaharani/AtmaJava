@@ -206,9 +206,9 @@ body{
 
 .title-section h2{
     color:#4f3527;
-    font-size:42px;
-    margin-bottom:12px;
-    font-family:serif;
+    font: size 34px;
+    margin-bottom:10px;
+    font-family: 'Poppins', sans-serif;
     font-weight:500;
 }
 
