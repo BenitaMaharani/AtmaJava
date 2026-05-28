@@ -94,7 +94,7 @@ body{
 }
 
 .about-logo {
-    width: 280px;
+    width: 300px;
     flex-shrink: 0;
     position: relative;
     z-index: 2;
