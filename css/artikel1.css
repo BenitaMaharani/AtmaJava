@@ -11,57 +11,86 @@ body {
     color: #3d2d24;
 }
 
-/*NAVBAR*/
-.navbar{
-    width:95%;
-    margin:20px auto;
-    background:#f6f6ed;
-    border-radius:30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 25px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+/* NAVBAR */
+.navbar {
+    width: 95%;
+    margin: 20px auto;
+    background: #f6f6ed;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.logo img{
-    width:55px;
+.logo img {
+    width: 55px;
 }
 
-.menu{
-    display:flex;
-    list-style:none;
-    gap:30px;
+.menu li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
 }
 
-.menu a{
-    text-decoration:none;
-    color:#3d332c;
-    font-size:14px;
-    font-weight:500;
+/* garis bawah */
+.menu li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #2f5d50;
+    transition: 0.3s;
 }
 
-.nav-button{
-    display:flex;
-    gap:10px;
+/* saat hover */
+.menu li a:hover::after {
+    width: 100%;
 }
 
-.btn-masuk{
-    padding:8px 18px;
-    border-radius:20px;
-    border:1px solid #7f624f;
-    background:transparent;
-    color:#5d4336;
-    cursor:pointer;
+/* halaman aktif */
+.menu li a.active::after {
+    width: 100%;
 }
 
-.btn-daftar{
-    padding:8px 18px;
-    border-radius:20px;
-    border:none;
-    background:#73917d;
-    color:white;
-    cursor:pointer;
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #3d332c;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-button {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-masuk {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #7f624f;
+    background: transparent;
+    color: #5d4336;
+    cursor: pointer;
+}
+
+.btn-daftar {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #73917d;
+    color: white;
+    cursor: pointer;
 }
 
 /* ================= HERO ARTIKEL (BANNER) ================= */
