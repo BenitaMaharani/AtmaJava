@@ -29,7 +29,7 @@
             <div class="footer-column">
                 <h3>Telusuri</h3>
                 <p><a href="index.php">Home</a></p>
-                <p><a href="jelajah.php">Jelajahi</a></p>
+                <p><a href="jelajah.php">Jelajah</a></p>
                 <p><a href="artikel.php">Artikel</a></p>
                 <p><a href="about.php">About Us</a></p>
             </div>
