@@ -94,14 +94,14 @@ body{
 }
 
 .about-logo {
-    width: 300px;
+    width: 280px;
     flex-shrink: 0;
     position: relative;
     z-index: 2;
 }
 
 .about-logo img {
-    width: 100%;
+    width: 130%;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
