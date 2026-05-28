@@ -206,11 +206,11 @@ body{
 
 .title-section h2{
     color:#4f3527;
-    font: size 34px;
+    font-size:34px;
     margin-bottom:10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight:500;
+    font-weight: bold;
 }
+
 
 .title-section p{
     color:#666;
