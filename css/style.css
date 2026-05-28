@@ -280,52 +280,63 @@ body {
     transform: scale(1.1);
 }
 
+/* ==========================================================================
+   PERBAIKAN KOTAK QUOTES: MENJADI EFEK KACA (GLASSMORPHISM) SEPERTI FOTO KEDUA
+   ========================================================================== */
+
 /* QUOTES */
 .quotes {
     width: 100%;
-    padding: 10px 20px 80px;
+    padding: 100px 20px; /* Diperlebar padding atas bawah agar komposisi kotak di tengah pas */
     background: url('../assets/img_bg/bg_page.png');
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quotes-box {
     width: 85%;
+    max-width: 1000px; /* Membatasi lebar maksimal kotak agar tidak terlalu melar di layar lebar */
     margin: auto;
-    background: rgba(255, 255, 255, 0.28);
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(80px);
-    -webkit-backdrop-filter: blur(8px);
-    padding: 45px 55px;
-    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2); /* Membuat latar belakang putih transparan tipis */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Garis tepi tipis transparan */
+    backdrop-filter: blur(12px); /* Efek blur kaca di belakang teks */
+    -webkit-backdrop-filter: blur(12px);
+    padding: 60px 55px; /* Memberikan ruang udara yang lebih lega di dalam kotak teks */
+    border-radius: 30px; /* Membuat sudut kotak melengkung halus */
     text-align: center;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Bayangan lembut di bawah kotak kaca */
 }
 
 .quotes-box h2 {
     font-size: 38px;
-    color: #4f3527;
-    margin-bottom: 18px;
+    color: #f6f6ed; /* Mengubah warna judul menjadi krem terang agar terbaca jelas */
+    margin-bottom: 20px;
     font-family: serif;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .quotes-box p {
-    font-size: 30px;
-    color: #4f3527;
-    margin-bottom: 20px;
+    font-size: 28px;
+    color: #f6f6ed; /* Mengubah warna kutipan utama menjadi krem terang */
+    margin-bottom: 25px;
     font-style: italic;
     font-family: serif;
+    line-height: 1.4;
 }
 
 .quotes-box span {
     display: block;
-    max-width: 760px;
+    max-width: 800px;
     margin: auto;
-    color: #4d4d4d;
-    line-height: 2;
+    color: #e2ded5; /* Mengubah warna deskripsi paragraf menjadi sedikit abu-krem terang */
+    line-height: 1.8;
     font-size: 15px;
+    font-weight: 300;
 }
 
 /* FOOTER */
