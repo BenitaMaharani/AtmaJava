@@ -25,6 +25,8 @@ if (!$data) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atma Java - <?php echo $data['judul']; ?></title>
 
+    <link rel="icon" type="image/png" href="assets/img_logo/logoatma.png">
+
     <link rel="stylesheet" href="css/artikel1.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
