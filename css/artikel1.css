@@ -12,7 +12,6 @@ body{
     overflow-x:hidden;
 }
 
-<<<<<<< HEAD
 /* NAVBAR */
 .navbar {
     width: 95%;
@@ -24,24 +23,7 @@ body{
     align-items: center;
     padding: 12px 25px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-=======
-/* ================= NAVBAR ================= */
-.navbar{
-    width:95%;
-    margin:20px auto;
-    background:#f6f6ed;
-    border-radius:30px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:12px 25px;
-
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
->>>>>>> cabang_haya
 }
-
 .logo img {
     width: 55px;
 }
@@ -53,7 +35,7 @@ body{
     padding-bottom: 5px;
 }
 
-<<<<<<< HEAD
+HEAD
 /* garis bawah */
 .menu li a::after {
     content: '';
@@ -64,7 +46,7 @@ body{
     height: 2px;
     background: #2f5d50;
     transition: 0.3s;
-=======
+}
 .menu a{
     text-decoration:none;
     color:#3d332c;
@@ -75,7 +57,6 @@ body{
 
 .menu a:hover{
     opacity:0.7;
->>>>>>> cabang_haya
 }
 
 /* saat hover */
@@ -83,7 +64,7 @@ body{
     width: 100%;
 }
 
-<<<<<<< HEAD
+ HEAD
 /* halaman aktif */
 .menu li a.active::after {
     width: 100%;
@@ -123,7 +104,7 @@ body{
     background: #73917d;
     color: white;
     cursor: pointer;
-=======
+}
 .btn-masuk{
     padding:8px 18px;
     border-radius:20px;
@@ -142,7 +123,6 @@ body{
     color:white;
     cursor:pointer;
     transition:0.3s;
->>>>>>> cabang_haya
 }
 
 .btn-masuk:hover,
@@ -398,15 +378,9 @@ footer{
     background:
     linear-gradient(
         rgba(74,43,27,0.88),
-        rgba(60,35,22,0.92)
-<<<<<<< HEAD
-    ),
-
-    url('..assets/img_bg/bg_page.png');
-
-=======
+        rgba(60,35,22,0.92),
     );
->>>>>>> cabang_haya
+    
     background-size:cover;
     background-position:center;
     color:white;
