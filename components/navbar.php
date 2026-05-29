@@ -14,7 +14,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <img src="assets/img_logo/logoatma.png" alt="logo Atma Java">
         </a>
     </div>
-
     <ul class="menu">
         <li>
             <a href="index.php" class="<?= ($current_page == 'index.php' || $current_page == '' || $current_page == 'index') ? 'active' : ''; ?>">
@@ -39,6 +38,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 About Us
             </a>
         </li>
+
     </ul>
 
     <div class="nav-button">
