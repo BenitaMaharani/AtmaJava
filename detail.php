@@ -21,6 +21,8 @@ $data = mysqli_fetch_array($query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Gunung - Atma Java</title>
+
+    <link rel="icon" type="image/png" href="assets/img_logo/logoatma.png">
     
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">

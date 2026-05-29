@@ -28,6 +28,8 @@ if (!$data) {
     <title><?php echo $data['nama']; ?> - Karakteristik & Ekosistem</title>
     <link rel="stylesheet" href="css/sumbing-page.css">
 
+    <link rel="icon" type="image/png" href="assets/img_logo/logoatma.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
