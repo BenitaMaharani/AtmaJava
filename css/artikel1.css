@@ -156,9 +156,7 @@ body{
 /* Paragraf */
 .isi-artikel p,
 .isi-text p{
-    margin-bottom:14px;
     text-align: justify;
-    text-indent: 30px;
 }
 
 /* Heading otomatis dari database */
@@ -178,11 +176,9 @@ body{
 .isi-artikel h3,
 .isi-text h3{
     color:#4f3527;
-
     font-size:22px;
     font-weight:700;
     line-height:32px;
-
     margin-top:22px;
     margin-bottom:10px;
 }
