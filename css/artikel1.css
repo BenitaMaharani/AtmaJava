@@ -206,25 +206,6 @@ body{
     font-weight:700;
 }
 
-/* ================= KHUSUS ARTIKEL 2 KOLOM ================= */
-.artikel-grid{
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:40px;
-
-    margin-top:20px;
-}
-
-.artikel-grid div{
-    border-right:1px solid #cfc6bc;
-    padding-right:20px;
-}
-
-.artikel-grid div:last-child{
-    border-right:none;
-}
 
 /* ================= DANGER TEXT ================= */
 .danger-text{
