@@ -108,11 +108,12 @@ body{
 /* Judul */
 .artikel-detail h1,
 .judul-artikel{
-    font-size:52px;
-    line-height:1.2;
-    color:#3d2d24;
-    margin-bottom:35px;
+    color:#4f3527;
+    font-size:34px;
     font-weight:700;
+    line-height:42px;
+    margin-bottom:25px;
+    padding:0;
 }
 
 /* Layout utama */
@@ -128,23 +129,15 @@ body{
 .quote-box{
     width:240px;
     min-width:240px;
-
     background:#4a2b1b;
-
     border-radius:20px;
-
     padding:35px 22px;
-
     color:#f1e7de;
-
     font-size:15px;
     line-height:2;
-
     text-align:center;
     font-weight:500;
-
     box-shadow:0 4px 10px rgba(0,0,0,0.05);
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -154,40 +147,36 @@ body{
 .isi-artikel,
 .isi-text{
     flex:1;
-
-    font-size:17px;
-    line-height:2;
-
+    font-size:16px;
+    line-height:1.7;
     color:#333;
 }
 
 /* Paragraf */
 .isi-artikel p,
 .isi-text p{
-    margin-bottom:20px;
+    margin-bottom:12px;
 }
 
 /* Heading otomatis dari database */
 .isi-artikel h2,
 .isi-text h2{
-    margin-top:35px;
-    margin-bottom:18px;
-
-    font-size:40px;
+    color:#4f3527;
+    font-size:28px;
     font-weight:700;
-
-    color:#3d2d24;
+    line-height:38px;
+    margin-top:28px;
+    margin-bottom:12px;
 }
 
 .isi-artikel h3,
 .isi-text h3{
-    margin-top:30px;
-    margin-bottom:12px;
-
-    color:#3d2d24;
-
-    font-size:30px;
+    color:#4f3527;
+    font-size:22px;
     font-weight:700;
+    line-height:32px;
+    margin-top:22px;
+    margin-bottom:10px;
 }
 
 /* List */
@@ -199,8 +188,8 @@ body{
 
 .isi-artikel li,
 .isi-text li{
-    margin-bottom:10px;
-    line-height:1.9;
+    margin-bottom:6px;
+    line-height:1.7;
 }
 
 /* Bold */
