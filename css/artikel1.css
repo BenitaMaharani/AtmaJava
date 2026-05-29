@@ -150,12 +150,15 @@ body{
     font-size:16px;
     line-height:1.7;
     color:#333;
+    text-align: justify;
 }
 
 /* Paragraf */
 .isi-artikel p,
 .isi-text p{
-    margin-bottom:12px;
+    margin-bottom:14px;
+    text-align: justify;
+    text-indent: 30px;
 }
 
 /* Heading otomatis dari database */
