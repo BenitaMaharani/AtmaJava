@@ -157,6 +157,7 @@ body{
 .isi-artikel p,
 .isi-text p{
     text-align: justify;
+    margin-bottom: 14px;
 }
 
 /* Heading otomatis dari database */
