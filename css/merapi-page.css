@@ -7,7 +7,6 @@
 body {
     background-color: #f0f2eb;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 60px;
 }
 
 /* NAVBAR */
@@ -92,31 +91,31 @@ body {
     cursor: pointer;
 }
 
-/* --- KARTU KONTEN --- */
+/* --- PERBAIKAN ARTIKEL: LAYOUT FULL LAYAR SESUAI FIGMA --- */
 .main-card {
-    background-color: #ebeee0; /* Warna krem figma */
-    max-width: 800px;
-    margin: 30px auto;
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    background-color: transparent; /* Membuang warna kotak krem kaku */
+    max-width: 100%;               /* Memaksa elemen melebar penuh layar */
+    margin: 0 auto;
+    border-radius: 0;              /* Menghilangkan lengkungan kotak */
+    box-shadow: none;              /* Menghilangkan bayangan kotak */
     overflow: hidden;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .image-header {
-    height: 400px;
+    height: 500px;                 /* Dipertinggi sedikit agar lebih sinematik seperti Figma */
     background-size: cover;
     background-position: center;
     position: relative;
-    margin: 20px;
-    border-radius: 25px;
+    margin: 0;                     /* Mengubah margin 20px menjadi 0 agar gambar mepet ke kanan-kiri layar */
+    border-radius: 0;              /* Menghilangkan lengkungan gambar header agar full lebar */
 }
 
 .coordinate-box {
     position: absolute;
     bottom: 25px;
-    right: 25px;
-    background-color: rgba(255, 255, 255, 0.85);
+    right: 5%;                     /* Menyesuaikan jarak kanan mengikuti lebar layar */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 12px 20px;
     border-radius: 16px;
     font-family: 'Georgia', serif;
@@ -126,49 +125,56 @@ body {
 }
 
 .content-container {
-    padding: 0 45px;
+    width: 100%;             /* Mengubah dari 90% menjadi 100% agar memenuhi layar */
+    max-width: 100%;         /* Menghapus batasan lebar maksimal (diubah menjadi 100%) */
+    margin: 40px 0 0;        /* Menghilangkan margin auto karena sudah full width */
+    padding: 0 60px;         /* Memberikan space/jarak aman di ujung kiri & kanan agar teks tidak menempel ke pinggir layar monitor */
+    box-sizing: border-box;  /* Memastikan padding tidak membuat layout meluber/scrolling horizontal */
 }
 
 .mountain-title {
     font-family: 'Georgia', serif;
     text-align: center;
-    font-size: 36px;
+    font-size: 46px;               /* Diperbesar nilainya agar megah seperti di Figma */
     color: #2a3d30;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .tagline {
     font-style: italic;
     text-align: center;
-    color: #555;
-    font-size: 15px;
-    margin-bottom: 35px;
-    line-height: 1.5;
+    color: #444;
+    font-size: 18px;               /* Disesuaikan ukurannya agar proporsional */
+    margin-bottom: 50px;
+    line-height: 1.6;
+    max-width: 800px;              /* Membatasi lebar teks sub-judul agar melipat rapi di tengah */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* --- STYLING ISI TEXT DARI DATABASE --- */
 .article-body {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.8; /* Menjaga jarak antar baris teks tetap renggang dan estetik */
     color: #2b2b2b;
     text-align: justify;
 }
 
 .section-block {
-    margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0.25);
-    padding: 20px;
-    border-radius: 20px;
+    margin-bottom: 40px;
+    background: transparent;       /* Mengubah background transparan kotak kecil menjadi bening */
+    padding: 0;                    /* Menghapus padding dalam karena sudah full layar */
+    border-radius: 0;
 }
 
 .section-block h2 {
     font-family: 'Georgia', serif;
-    font-size: 18px;
+    font-size: 24px;               /* Judul poin nomor (1. Dasar-Dasar Geologi) diperbesar sesuai figma */
     color: #1e2d22;
-    margin-bottom: 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    padding-bottom: 6px;
+    margin-bottom: 18px;
+    border-bottom: none;           /* Menghilangkan garis pembatas bawah tipis agar bersih seperti figma */
+    padding-bottom: 0;
 }
 
 .section-block p {
@@ -243,7 +249,7 @@ footer{
         rgba(60,35,22,0.92)
     ),
 
-    url('../assets/img_bg/bg_page.png');
+    url('..assets/img_bg/bg_page.png');
 
     background-size:cover;
     background-position:center;
