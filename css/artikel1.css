@@ -159,12 +159,15 @@ body{
 }
 
 /* Heading otomatis dari database */
+/* ================= HEADING DALAM ARTIKEL ================= */
 .isi-artikel h2,
 .isi-text h2{
     color:#4f3527;
+
     font-size:28px;
     font-weight:700;
     line-height:38px;
+
     margin-top:28px;
     margin-bottom:12px;
 }
@@ -172,9 +175,11 @@ body{
 .isi-artikel h3,
 .isi-text h3{
     color:#4f3527;
+
     font-size:22px;
     font-weight:700;
     line-height:32px;
+
     margin-top:22px;
     margin-bottom:10px;
 }
