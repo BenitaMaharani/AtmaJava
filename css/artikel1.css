@@ -12,21 +12,17 @@ body{
     overflow-x:hidden;
 }
 
-/* ================= NAVBAR ================= */
-.navbar{
-    width:95%;
-    margin:20px auto;
-    background:#f6f6ed;
-    border-radius:30px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:12px 25px;
-
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-
+/* NAVBAR */
+.navbar {
+    width: 95%;
+    margin: 20px auto;
+    background: #f6f6ed;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 .logo img {
     width: 55px;
@@ -60,6 +56,17 @@ body{
     height: 2px;
     background: #2f5d50;
     transition: 0.3s;
+}
+.menu a{
+    text-decoration:none;
+    color:#3d332c;
+    font-size:14px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    opacity:0.7;
 }
 
 /* saat hover */
@@ -125,6 +132,25 @@ body{
     background: #73917d;
     color: white;
     cursor: pointer;
+}
+.btn-masuk{
+    padding:8px 18px;
+    border-radius:20px;
+    border:1px solid #7f624f;
+    background:transparent;
+    color:#5d4336;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn-daftar{
+    padding:8px 18px;
+    border-radius:20px;
+    border:none;
+    background:#73917d;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
 }
 
 .btn-masuk:hover,
@@ -381,6 +407,7 @@ footer{
     linear-gradient(
         rgba(74,43,27,0.88),
         rgba(60,35,22,0.92),
+
     )
     url('..assets/img_bg/bg_page.png');
 
