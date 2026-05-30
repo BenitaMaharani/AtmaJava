@@ -14,7 +14,7 @@ if (isset($_POST['register'])) {
     // Cek dulu apakah email sudah pernah didaftarkan
     $cek_email = mysqli_query($conn, "SELECT email FROM users WHERE email = '$email'");
     if (mysqli_num_rows($cek_email) > 0) {
-        echo "<script>alert('Email sudah terdaftar!'); window.location.href='daftar.php';</script>";
+        echo "<script>alert('Email sudah terdaftar!'); window.location.href='masuk.php';</script>";
         exit;
     }
 

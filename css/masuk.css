@@ -96,18 +96,18 @@ body{
 
 .login-section{
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh; /* DIUBAH: Dari 100vh ke 85vh agar posisi otomatis naik ke atas */
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 10px 20px 40px;
+    padding: 0px 20px 40px; /* DIUBAH: Padding atas dibuat 0px biar makin naik */
 }
 
 .login-box{
     width: 100%;
-    max-width: 420px;
+    max-width: 480px; /* DIUBAH: Dari 420px ke 480px supaya teks melebar ke samping */
 }
 
 .login-box h1{
@@ -282,4 +282,21 @@ body{
 .facebook-btn img{
     width:20px;
     height:20px;
+}
+
+/* ================= LUPA PASSWORD NEW ================= */
+.lupa-password-text {
+    align-self: flex-end;
+    color: #6a2626;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: -12px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.lupa-password-text:hover {
+    text-decoration: underline;
+    opacity: 0.8;
 }
