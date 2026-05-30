@@ -95,14 +95,10 @@ body{
 .hero{
     width:95%;
     height:520px;
-
     margin:auto;
-
     position:relative;
     overflow:hidden;
-
     border-radius:25px;
-
     background-image:
     linear-gradient(
         rgba(0,0,0,0.30),
@@ -113,7 +109,6 @@ body{
 
     background-size:cover;
     background-position:center;
-
     animation:slideBackground 10s infinite ease-in-out;
 }
 
@@ -169,21 +164,14 @@ body{
 
 .info-box{
     position:absolute;
-
     bottom:25px;
     right:25px;
-
-    background:rgba(255,255,255,0.80);
-
+    background:#eef0e3;
     backdrop-filter:blur(6px);
-
     padding:18px 28px;
-
     border-radius:20px;
-
     display:flex;
     gap:35px;
-
     z-index:2;
 }
 
@@ -224,116 +212,168 @@ body{
     }
 }
 
-/* ================= TITLE ================= */
-
+/*TITLE*/
 .title-section{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
     text-align:center;
+
     margin-top:55px;
-    margin-bottom:35px;
-    padding:0 20px;
+    margin-bottom:45px;
 }
 
 .title-section h2{
     color:#4f3527;
-    font-size:42px;
-    margin-bottom:12px;
-    font-family:serif;
-    font-weight:500;
-}
 
-.title-section p{
-    color:#666;
-    max-width:620px;
-    margin:auto;
-    line-height:1.8;
-    font-size:14px;
-}
+    font-size:34px;
+    font-weight:700;
 
-/* ================= CARD ================= */
+    line-height:42px;
 
-.card-container{
+    margin:0;
+    padding:0;
 
-    width:90%;
-
-    margin:40px auto 90px;
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit, minmax(220px, 1fr));
-
-    justify-content:center;
-
-    gap:28px;
-}
-
-.card{
-    background:#f5f2e8;
-    border:2px solid #8b6a55;
-    border-radius:18px;
-    padding:8px;
-    position:relative;
-    overflow:hidden;
-    text-decoration:none;
-    transition:0.3s ease;
-    box-shadow:
-    5px 5px 0px #c8c1b5;
-}
-
-.card:hover{
-    transform:translateY(-6px);
-}
-
-.card img{
-    width:100%;
-    height:150px;
-    object-fit:cover;
-    border-radius:14px;
     display:block;
 }
 
+.title-section p{
+    margin-top:12px;
+
+    color:#7c7c7c;
+
+    font-size:14px;
+    font-weight:400;
+
+    line-height:24px;
+
+    max-width:700px;
+}
+/* ================= CARD ================= */
+
+.card-container{
+    width:90%;
+    margin:50px auto 90px;
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(340px, 1fr));
+    gap:32px;
+}
+
+/* CARD UTAMA */
+.card{
+    background:#f5f2e8;
+    border:2px solid #8b6a55;
+    border-radius:22px;
+    padding:10px;
+    position:relative;
+    overflow:hidden;
+    text-decoration:none;
+    transition:0.35s ease;
+    box-shadow:
+    6px 6px 0px #c8c1b5;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* GAMBAR ATAS */
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    border-radius:16px;
+}
+
+/* ISI CARD */
 .card-content{
     background:#4b3026;
-    margin-top:10px;
-    border-radius:14px;
-    padding:16px;
+
+    margin-top:12px;
+
+    border-radius:18px;
+
+    padding:18px;
+
     color:white;
+
     text-align:left;
 }
 
+/* JUDUL */
 .card-content h3{
     font-size:18px;
-    margin-bottom:10px;
-    line-height:1.4;
-    font-weight:500;
+    line-height:1.45;
+    font-weight:600;
+    margin-bottom:14px;
 }
 
+/* DESKRIPSI */
 .card-content p{
-    font-size:11px;
-    margin-bottom:18px;
-    line-height:1.6;
+    font-size:12px;
+    line-height:1.8;
     color:#e7e7e7;
+    margin-bottom:20px;
 }
 
+/* BUTTON */
 .card-content span{
-    width:270px;
-    height:36px;
+    width:100%;
+    max-width:270px;
+    height:42px;
     margin:auto;
-    border-radius:10px;
+    border-radius:12px;
     background:#6f8b80;
     display:flex;
     justify-content:center;
     align-items:center;
     color:white;
-    font-size:12px;
-    transition:0.3s;
+    font-size:13px;
+    font-weight:500;
+    transition:0.3s ease;
 }
 
+/* HOVER BUTTON */
 .card:hover span{
-
-    transform:scale(1.1);
+    transform:scale(1.05);
+    background:#5f7a70;
 }
 
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .card-container{
+        width:92%;
+        grid-template-columns:1fr;
+        gap:24px;
+    }
+
+    .card img{
+        width:100%;
+        height:300px;
+        object-fit:cover;
+        object-position:center;
+        display:block;
+        border-radius:16px;
+    }
+
+
+
+    .card-content h3{
+        font-size:17px;
+    }
+
+    .card-content p{
+        font-size:11px;
+    }
+}
 /* RESPONSIVE */
 
 @media(max-width:768px){
@@ -349,7 +389,7 @@ body{
 .quotes{
     width:100%;
     padding:90px 20px 0;
-    background:url('assets/img/bg-footer.png');
+    background:url('../assets/img_bg/bg_page.png');
     background-size:cover;
     background-position:center;
     position: relative;
