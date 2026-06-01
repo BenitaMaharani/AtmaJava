@@ -14,7 +14,7 @@ if (isset($_POST['register'])) {
     // Cek dulu apakah email sudah pernah didaftarkan
     $cek_email = mysqli_query($conn, "SELECT email FROM users WHERE email = '$email'");
     if (mysqli_num_rows($cek_email) > 0) {
-        echo "<script>alert('Email sudah terdaftar!'); window.location.href='daftar.php';</script>";
+        echo "<script>alert('Email sudah terdaftar!'); window.location.href='masuk.php';</script>";
         exit;
     }
 
@@ -63,26 +63,8 @@ if (isset($_POST['register'])) {
             <h1>Selamat Datang!</h1>
 
             <p class="register-desc">
-                Pilih salah satu metode pendaftaran di bawah ini
-                untuk mendaftarkan akun ke Atma Java
+                Isi formulir di bawah ini untuk mendaftarkan akun ke Atma Java
             </p>
-
-            <div class="social-login">
-                <a href="#" class="google-btn">
-                    <img src="assets/icon_masuk/google.png">
-                    Google
-                </a>
-                <a href="#" class="facebook-btn">
-                    <img src="assets/icon_masuk/facebook.png">
-                    Facebook
-                </a>
-            </div>
-
-            <div class="separator">
-                <span></span>
-                <p>ATAU</p>
-                <span></span>
-            </div>
 
             <form action="" method="POST">
                 
