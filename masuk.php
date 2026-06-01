@@ -59,7 +59,7 @@ if (isset($_POST['login'])) {
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2 family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -104,9 +104,9 @@ if (isset($_POST['login'])) {
                     <a href="lupa-password.php" class="lupa-password-text">Lupa password?</a>
                 <?php endif; ?>
                     
-                    <button type="submit" name="login">
-                        Masuk
-                    </button>
+                <button type="submit" name="login">
+                    Masuk
+                </button>
 
             </form>
 
@@ -114,22 +114,6 @@ if (isset($_POST['login'])) {
                 Belum memiliki akun?
                 <a href="daftar.php">Daftar</a>
             </p>
-
-            <div class="separator">
-                <span></span>
-                <p>ATAU</p>
-                <span></span>
-            </div>
-            <div class="social-login">
-                <a href="#" class="google-btn">
-                    <img src="assets/icon_masuk/google.png">
-                    Google
-                </a>
-                <a href="#" class="facebook-btn">
-                    <img src="assets/icon_masuk/facebook.png">
-                    Facebook
-                </a>
-            </div>
 
         </div>
 
