@@ -395,197 +395,218 @@ body{
     transform:scale(1.05);
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
+footer {
+    width: 100%;
+    padding: 45px 65px 35px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    gap: 60px;
+    position: relative;
+    background: linear-gradient(rgba(74, 43, 27, 0.88), rgba(60, 35, 22, 0.92));
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(4px);
+    color: white;
+}
+/*FOOTER*/
 footer{
     width:100%;
     padding:45px 65px 35px;
     display:grid;
-    grid-template-columns:1.2fr 1fr 0.8fr;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
     gap:60px;
     position:relative;
     background:
     linear-gradient(
         rgba(74,43,27,0.88),
-        rgba(60,35,22,0.92),
+        rgba(60,35,22,0.92)
+    ),
 
-    )
     url('..assets/img_bg/bg_page.png');
 
     background-size:cover;
     background-position:center;
+    backdrop-filter:blur(4px);
     color:white;
+    }
+/*FOOTER */
+footer {
+    width: 100%;
+    padding: 45px 65px 35px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    gap: 60px;
+    position: relative;
+    background: linear-gradient(#4a2b1be0, #3c2316eb);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(4px);
+    color: white;
 }
 
-footer::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    background:rgba(255,255,255,0.03);
-    pointer-events:none;
+footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.03);
+    pointer-events: none;
 }
 
-.footer-left,
-.foot-center{
-    position:relative;
-    z-index:2;
+.footer-left {
+    position: relative;
+    z-index: 2;
 }
 
-.footer-logo{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    margin-bottom:18px;
+.footer-logo {
+    display: flex;  
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
 }
 
-.footer-logo img{
-    width:62px;
-    height:62px;
+.footer-logo img {
+    width: 62px;
+    height: 62px;
 }
 
-.footer-logo h2{
-    font-size:42px;
-    font-family:serif;
-    font-weight:500;
-    font-style:italic;
+.footer-logo h2 {
+    font-size: 42px;
+    font-family: serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
-.footer-left p{
-    width:290px;
-    font-size:13px;
-    line-height:1.9;
-    color:#ebe4de;
+.footer-left p {
+    width: 290px;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #ebe4de;
 }
 
-.footer-contact{
-    display:flex;
-    gap:14px;
-    margin-bottom:24px;
+.foot-center {
+    position: relative;
+    z-index: 2;
 }
 
-.footer-contact i{
-    font-size:18px;
-    margin-top:4px;
-    color:#f2f2f2;
+.footer-contact {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 24px;
 }
 
-.footer-contact p{
-    font-size:13px;
-    line-height:1.9;
-    color:#f4f0ec;
+.footer-contact i {
+    font-size: 18px;
+    margin-top: 4px;
+    color: #f2f2f2;
 }
 
-.footer-menu{
-    display:flex;
-    justify-content:space-between;
-    margin-top:25px;
+.footer-contact p {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #f4f0ec;
 }
 
-.footer-column h3{
-    font-size:15px;
-    margin-bottom:14px;
-    position:relative;
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
 }
 
-.footer-column h3::after{
-    content:'';
-    width:85px;
-    height:1px;
-    background:rgba(255,255,255,0.5);
-    position:absolute;
-    left:0;
-    bottom:-8px;
+/* tiap kolom */
+.footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 14px;
+    position: relative;
 }
 
-.footer-column p{
-    margin-top:14px;
-    font-size:13px;
-    color:#f1ece7;
-    cursor:pointer;
-    transition:0.3s;
+/* garis bawah */
+.footer-column h3::after {
+    content: '';
+    width: 85px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
 }
 
-.footer-column p:hover{
-    transform:translateX(4px);
-    opacity:0.8;
+.footer-column p {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #f1ece7;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.footer-column p a{
-    text-decoration:none;
-    color:inherit;
-    display:block;
-    width:100%;
+.footer-column p:hover {
+    transform: translateX(4px);
+    opacity: 0.8;
 }
 
-.footer-column p:hover a{
-    color:#ffffff;
+/* Menghilangkan warna biru default dan garis bawah pada link footer */
+.footer-column p a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
 }
 
-/* ================= COPYRIGHT ================= */
-.copyright{
-    background:#f5f2ea;
-    padding:14px 25px;
-    font-size:12px;
-    color:#5d4a3d;
+/* Supaya hover-nya tetap jalan meskipun ada di dalam tag <a> */
+.footer-column p:hover a {
+    color: #ffffff;
 }
 
-/* ================= RESPONSIVE ================= */
-@media(max-width:992px){
+.copyright {
+    background: #f5f2ea;
+    padding: 14px 25px;
+    font-size: 12px;
+    color: #5d4a3d;
+}
 
-    .artikel-content,
-    .konten-artikel{
-        flex-direction:column;
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .quote-box{
-        width:100%;
-        min-width:100%;
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .artikel-grid{
-        grid-template-columns:1fr;
+    .hero {
+        height: 650px;
     }
 
-    .artikel-grid div{
-        border-right:none;
-        border-bottom:1px solid #cfc6bc;
-        padding-bottom:20px;
-    }
-}
-
-@media(max-width:768px){
-
-    .navbar{
-        flex-direction:column;
-        gap:20px;
+    .hero-text {
+        left: 20px;
+        top: 60px;
     }
 
-    .menu{
-        flex-wrap:wrap;
-        justify-content:center;
+    .hero-text h1 {
+        font-size: 38px;
     }
 
-    .artikel-detail h1,
-    .judul-artikel{
-        font-size:36px;
+    .hero-text p {
+        width: 90%;
     }
 
-    .isi-artikel,
-    .isi-text{
-        font-size:15px;
+    .info-box {
+        flex-direction: column;
+        right: 20px;
+        left: 20px;
+        bottom: 20px;
     }
 
-    .isi-artikel h2,
-    .isi-text h2{
-        font-size:30px;
+    .card-container {
+        grid-template-columns: 1fr;
     }
 
-    .isi-artikel h3,
-    .isi-text h3{
-        font-size:24px;
-    }
-
-    footer{
-        grid-template-columns:1fr;
-        padding:40px 30px;
+    footer {
+        grid-template-columns: 1fr; /* Perbaikan: Mengubah grid menjadi 1 kolom agar responsif, bukan flex-direction */
+        gap: 40px;
+        padding: 40px 30px;
     }
 }
