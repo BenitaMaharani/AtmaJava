@@ -467,18 +467,19 @@ body {
 
 .quotes-box h2 {
     font-size: 38px;
-    color: #3c2316eb; /* Mengubah warna judul menjadi krem terang agar terbaca jelas */
+    color: #3c2316eb; 
     margin-bottom: 20px;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .quotes-box p {
     font-size: 28px;
     color: #3c2316eb; /* Mengubah warna kutipan utama menjadi krem terang */
-    margin-bottom: 25px;
-    font-family: 'Poppins';
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.4;
 }
 
