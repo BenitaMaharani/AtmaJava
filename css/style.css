@@ -467,7 +467,7 @@ body {
 
 .quotes-box h2 {
     font-size: 38px;
-    color: #f6f6ed; /* Mengubah warna judul menjadi krem terang agar terbaca jelas */
+    color: #3c2316eb; /* Mengubah warna judul menjadi krem terang agar terbaca jelas */
     margin-bottom: 20px;
     font-family: serif;
     font-weight: 500;
@@ -476,7 +476,7 @@ body {
 
 .quotes-box p {
     font-size: 28px;
-    color: #f6f6ed; /* Mengubah warna kutipan utama menjadi krem terang */
+    color: #3c2316eb; /* Mengubah warna kutipan utama menjadi krem terang */
     margin-bottom: 25px;
     font-style: italic;
     font-family: serif;
@@ -536,7 +536,7 @@ footer {
     grid-template-columns: 1.2fr 1fr 0.8fr;
     gap: 60px;
     position: relative;
-    background: linear-gradient(rgba(74, 43, 27, 0.88), rgba(60, 35, 22, 0.92));
+    background: linear-gradient(#4a2b1be0, #3c2316eb);
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(4px);
