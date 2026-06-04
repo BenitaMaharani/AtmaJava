@@ -469,7 +469,7 @@ body {
     font-size: 38px;
     color: #3c2316eb; /* Mengubah warna judul menjadi krem terang agar terbaca jelas */
     margin-bottom: 20px;
-    font-family: serif;
+    font-family: 'Poppins';
     font-weight: 500;
     letter-spacing: 1px;
 }
@@ -478,8 +478,7 @@ body {
     font-size: 28px;
     color: #3c2316eb; /* Mengubah warna kutipan utama menjadi krem terang */
     margin-bottom: 25px;
-    font-style: italic;
-    font-family: serif;
+    font-family: 'Poppins';
     line-height: 1.4;
 }
 
