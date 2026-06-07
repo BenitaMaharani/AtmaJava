@@ -97,11 +97,9 @@ body{
 .login-section{
     width: 100%;
     min-height: 85vh; /* DIUBAH: Dari 100vh ke 85vh agar posisi otomatis naik ke atas */
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 0px 20px 40px; /* DIUBAH: Padding atas dibuat 0px biar makin naik */
 }
 
@@ -113,7 +111,6 @@ body{
 .login-box h1{
     font-size: 42px;
     color: #4d2d23;
-
     margin-bottom: 15px;
     font-weight: 600;
     line-height: 1.2;
@@ -122,7 +119,6 @@ body{
 .login-desc{
     font-size: 17px;
     color: #4f5b58;
-
     margin-bottom: 30px;
 }
 
@@ -140,14 +136,10 @@ body{
 .login-box input{
     width: 100%;
     padding: 13px 18px;
-
     border: 1.5px solid #c9b2aa;
     border-radius: 10px;
-
     font-size: 16px;
-
     margin-bottom: 22px;
-
     background-color: transparent;
 }
 
@@ -158,20 +150,14 @@ body{
 
 .login-box button{
     width: 100%;
-
     padding: 13px;
-
     border: none;
     border-radius: 10px;
-
     background-color: #6a2626;
     color: white;
-
     font-size: 18px;
     font-weight: 600;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -182,7 +168,6 @@ body{
 .daftar-text{
     text-align: center;
     margin-top: 20px;
-
     font-size: 17px;
 }
 
@@ -205,7 +190,6 @@ body{
     display:flex;
     align-items:center;
     gap:15px;
-
     margin:40px 0 25px;
 }
 
@@ -230,18 +214,12 @@ body{
 .google-btn,
 .facebook-btn{
     width:100%;
-
     padding:14px;
-
     border-radius:10px;
-
     text-decoration:none;
-
     text-align:center;
-
     font-size:18px;
     font-weight:600;
-
     transition:0.3s;
 }
 
