@@ -332,15 +332,6 @@ body{
     transform: scale(1.05);
 }
 
-.bg-gunung{
-    width:100%;
-    height:500px;
-
-    background:url('../assets/img_bg/bg_page.png');
-    background-size:cover;
-    background-position:center;
-}
-
 /*FOOTER*/
 footer{
     width:100%;
