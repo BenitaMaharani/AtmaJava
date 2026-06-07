@@ -234,15 +234,11 @@ body {
 /*FOOTER*/
 footer{
     width:100%;
-
     padding:45px 65px 35px;
-
     display:grid;
     grid-template-columns: 1.2fr 1fr 0.8fr;
     gap:60px;
-
     position:relative;
-
     background:
     linear-gradient(
         rgba(74,43,27,0.88),
@@ -253,21 +249,15 @@ footer{
 
     background-size:cover;
     background-position:center;
-
     backdrop-filter:blur(4px);
-
     color:white;
 }
 
 footer::before{
-
     content:'';
-
     position:absolute;
     inset:0;
-
     background:rgba(255,255,255,0.03);
-
     pointer-events:none;
 }
 
@@ -290,7 +280,6 @@ footer::before{
 
 .footer-logo h2{
     font-size:42px;
-
     font-family:serif;
     font-weight:500;
     font-style:italic;
@@ -298,10 +287,8 @@ footer::before{
 
 .footer-left p{
     width:290px;
-
     font-size:13px;
     line-height:1.9;
-
     color:#ebe4de;
 }
 
@@ -313,30 +300,24 @@ footer::before{
 .footer-contact{
     display:flex;
     gap:14px;
-
     margin-bottom:24px;
 }
 
 .footer-contact i{
-
     font-size:18px;
     margin-top:4px;
-
     color:#f2f2f2;
 }
 
 .footer-contact p{
     font-size:13px;
     line-height:1.9;
-
     color:#f4f0ec;
 }
 
 .footer-menu{
-
     display:flex;
     justify-content:space-between;
-
     margin-top:25px;
 }
 
@@ -344,24 +325,18 @@ footer::before{
 /* tiap kolom */
 
 .footer-column h3{
-
     font-size:15px;
     margin-bottom:14px;
-
     position:relative;
 }
 
 
 /* garis bawah */
 .footer-column h3::after{
-
     content:'';
-
     width:85px;
     height:1px;
-
     background:rgba(255,255,255,0.5);
-
     position:absolute;
     left:0;
     bottom:-8px;
@@ -369,19 +344,14 @@ footer::before{
 }
 
 .footer-column p{
-
     margin-top:14px;
-
     font-size:13px;
     color:#f1ece7;
-
     cursor:pointer;
-
     transition:0.3s;
 }
 
 .footer-column p:hover{
-
     transform:translateX(4px);
     opacity:0.8;
 }/* Menghilangkan warna biru default dan garis bawah pada link footer */
@@ -400,17 +370,13 @@ footer::before{
 
 .copyright{
     background:#f5f2ea;
-
     padding:14px 25px;
-
     font-size:12px;
-
     color:#5d4a3d;
 }
 
 /*RESPONSIVE*/
 @media(max-width:768px){
-
     .navbar{
         flex-direction:column;
         gap:20px;
