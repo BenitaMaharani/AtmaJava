@@ -87,6 +87,8 @@ if (!$data) {
         </div>
     </section>
 
+    <div class="bg-gunung"></div>
+
     <?php include 'components/footer.php'; ?>
     
 </body>
