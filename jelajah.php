@@ -88,6 +88,8 @@ include 'config/koneksi.php';
         <?php } ?>
     </section>
 
+    <div class="bg_page.png"></div>
+
     <?php include 'components/footer.php'; ?>
     
 </body>
