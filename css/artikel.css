@@ -449,10 +449,7 @@ footer{
     linear-gradient(
         rgba(74,43,27,0.88),
         rgba(60,35,22,0.92)
-    ),
-
-    url('..assets/img_bg/bg_page.png');
-
+    ),;
     background-size:cover;
     background-position:center;
     backdrop-filter:blur(4px);
@@ -562,6 +559,7 @@ footer::before{
     transform:translateX(4px);
     opacity:0.8;
 }/* Menghilangkan warna biru default dan garis bawah pada link footer */
+
 .footer-column p a {
     text-decoration: none;
     color: inherit; /* Mengikuti warna p (krem) */
@@ -573,7 +571,6 @@ footer::before{
 .footer-column p:hover a {
     color: #ffffff;
 }
-
 
 .copyright{
     background:#f5f2ea;
@@ -618,6 +615,8 @@ footer::before{
         left:20px;
         bottom:20px;
     }
+
+    
 
     footer{
         flex-direction:column;
