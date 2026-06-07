@@ -85,6 +85,8 @@ if (session_status() === PHP_SESSION_NONE) {
     ?>
     </section>
 
+    <div class="bg-gunung"></div>
+
     <?php include 'components/footer.php'; ?>
 </body>
 </html>

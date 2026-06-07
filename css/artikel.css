@@ -384,54 +384,14 @@ body{
     }
 
 }
-
-/*QUOTES*/
-.quotes{
+/* BACKGROUND GUNUNG */
+.bg-gunung{
     width:100%;
-    padding:90px 20px 0;
+    height:350px;
     background:url('../assets/img_bg/bg_page.png');
     background-size:cover;
     background-position:center;
-    position: relative;
-}
-
-.quotes-box{
-    width:85%;
-    margin: auto;
-    background:rgba(255,255,255,0.28);
-    border:1px solid rgb(255,255,255,0.35);
-    backdrop-filter: blur(80px);
-    -webkit-backdrop-filter: blur(8px);
-    padding:45px 55px;
-    border-radius:25px;
-    text-align:center;
-    box-shadow:0 8px 30px rgba(0,0,0,0.10);
-}
-
-.quotes-box h2{
-    font-size:38px;
-    color:#4f3527;
-    margin-bottom:18px;
-    font-family:serif;
-    font-weight:500;
-}
-
-.quotes-box p{
-    font-size:30px;
-    color:#4f3527;
-    margin-bottom:20px;
-    font-style:italic;
-    font-family:serif;
-}
-
-.quotes-box span{
-    display:block;
-    max-width:760px;
-    margin:auto;
-
-    color:#4d4d4d;
-    line-height:2;
-    font-size:15px;
+    background-repeat:no-repeat;
 }
 
 /*FOOTER*/
