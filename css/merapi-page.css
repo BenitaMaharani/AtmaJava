@@ -170,7 +170,7 @@ body {
 
 .section-block h2 {
     font-family: 'poppins', serif;
-    font-size: 24px;               /* Judul poin nomor (1. Dasar-Dasar Geologi) diperbesar sesuai figma */
+    font-size: 15px;               /* Judul poin nomor (1. Dasar-Dasar Geologi) diperbesar sesuai figma */
     color: #1e2d22;
     margin-bottom: 18px;
     border-bottom: none;           /* Menghilangkan garis pembatas bawah tipis agar bersih seperti figma */
