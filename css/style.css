@@ -418,7 +418,7 @@ body {
 
 .quotes-box h2 {
     font-size: 38px;
-    color: #f6f6ed; /* Mengubah warna judul menjadi krem terang agar terbaca jelas */
+    color: #2f5d50; /* Mengubah warna judul menjadi krem terang agar terbaca jelas */
     margin-bottom: 20px;
     font-family: serif;
     font-weight: 500;
@@ -427,7 +427,7 @@ body {
 
 .quotes-box p {
     font-size: 28px;
-    color: #f6f6ed; /* Mengubah warna kutipan utama menjadi krem terang */
+    color: #2f5d50; /* Mengubah warna kutipan utama menjadi krem terang */
     margin-bottom: 25px;
     font-style: italic;
     font-family: serif;
@@ -438,7 +438,7 @@ body {
     display: block;
     max-width: 800px;
     margin: auto;
-    color: #e2ded5; /* Mengubah warna deskripsi paragraf menjadi sedikit abu-krem terang */
+    color: #305a4e; /* Mengubah warna deskripsi paragraf menjadi sedikit abu-krem terang */
     line-height: 1.8;
     font-size: 15px;
     font-weight: 300;
