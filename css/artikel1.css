@@ -1,18 +1,18 @@
 /* ================= RESET & BASE ================= */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background:#f3f0e7;
-    color:#3d2d24;
-    overflow-x:hidden;
+body {
+    background: #eef0e3;
+    color: #3d2d24;
+    overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar {
     width: 95%;
     margin: 20px auto;
@@ -28,409 +28,233 @@ body{
     width: 55px;
 }
 
-.menu li a {
-    position: relative;
-    text-decoration: none;
-    color: black;
-    padding-bottom: 5px;
-}
-.menu a{
-    text-decoration:none;
-    color:#3d332c;
-    font-size:14px;
-    font-weight:500;
-    transition:0.3s;
-}
-
-.menu a:hover{
-    opacity:0.7;
-}
-
-/* garis bawah */
-.menu li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background: #2f5d50;
-    transition: 0.3s;
-}
-.menu a{
-    text-decoration:none;
-    color:#3d332c;
-    font-size:14px;
-    font-weight:500;
-    transition:0.3s;
-}
-
-.menu a:hover{
-    opacity:0.7;
-}
-
-/* saat hover */
-.menu li a:hover::after {
-    width: 100%;
-}
-
-.btn-masuk{
-    padding:8px 18px;
-    border-radius:20px;
-    border:1px solid #7f624f;
-    background:transparent;
-    color:#5d4336;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.btn-daftar{
-    padding:8px 18px;
-    border-radius:20px;
-    border:none;
-    background:#73917d;
-    color:white;
-    cursor:pointer;
-    transition:0.3s;
-}
-/* halaman aktif */
-.menu li a.active::after {
-    width: 100%;
-}
-
 .menu {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-.menu a {
+.menu li a {
+    position: relative;
     text-decoration: none;
     color: #3d332c;
     font-size: 14px;
     font-weight: 500;
+    padding-bottom: 5px;
+    transition: 0.3s;
 }
 
-.nav-button {
-    display: flex;
-    gap: 10px;
-}
-
-.btn-masuk {
-    padding: 8px 18px;
-    border-radius: 20px;
-    border: 1px solid #7f624f;
-    background: transparent;
-    color: #5d4336;
-    cursor: pointer;
-}
-
-.btn-daftar {
-    padding: 8px 18px;
-    border-radius: 20px;
-    border: none;
-    background: #73917d;
-    color: white;
-    cursor: pointer;
-}
-.btn-masuk{
-    padding:8px 18px;
-    border-radius:20px;
-    border:1px solid #7f624f;
-    background:transparent;
-    color:#5d4336;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.btn-daftar{
-    padding:8px 18px;
-    border-radius:20px;
-    border:none;
-    background:#73917d;
-    color:white;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.btn-masuk:hover,
-.btn-daftar:hover{
-    transform:translateY(-2px);
+.btn-daftar:hover {
+    transform: translateY(-2px);
 }
 
 /* ================= HERO / BANNER ================= */
-.hero-artikel,
-.banner-artikel{
-    width:90%;
-    margin:25px auto 0;
+.banner-artikel {
+    width: 90%;
+    margin: 25px auto 0;
 }
-
-.hero-artikel img,
-.banner-artikel img{
-    width:100%;
-    height:auto;
-    max-height:450px;
-    object-fit:cover;
-    border-radius:22px;
-    display:block;
+.banner-artikel img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 22px;
+    display: block;
 }
 
 /* ================= DETAIL ARTIKEL ================= */
-.artikel-detail,
-.artikel-section{
-    width:90%;
-    margin:auto;
-    padding:40px 0;
+.artikel-section {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
 }
 
 /* Judul */
-.artikel-detail h1,
-.judul-artikel{
-    color:#4f3527;
-    font-size:34px;
-    font-weight:700;
-    line-height:42px;
-    margin-bottom:25px;
-    padding:0;
+.judul-artikel {
+    color: #4f3527;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 25px;
+    padding: 0;
 }
 
 /* Layout utama */
-.artikel-content,
-.konten-artikel{
-    display:flex;
-    gap:35px;
-
-    align-items:stretch;
+.konten-artikel {
+    display: flex;
+    gap: 35px;
+    align-items: stretch;
 }
 
 /* ================= QUOTE BOX ================= */
-.quote-box{
-    width:240px;
-    min-width:240px;
-    background:#4a2b1b;
-    border-radius:20px;
-    padding:35px 22px;
-    color:#f1e7de;
-    font-size:15px;
-    line-height:2;
-    text-align:center;
-    font-weight:500;
-    box-shadow:0 4px 10px rgba(0,0,0,0.05);
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.quote-box {
+    width: 240px;
+    min-width: 240px;
+    background: #4a2b1b;
+    border-radius: 20px;
+    padding: 35px 22px;
+    color: #f1e7de;
+    font-size: 15px;
+    line-height: 2;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ================= ISI ARTIKEL ================= */
-.isi-artikel,
-.isi-text{
-    flex:1;
-    font-size:16px;
-    line-height:1.7;
-    color:#333;
+.isi-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
     text-align: justify;
 }
 
 /* Paragraf */
-.isi-artikel p,
-.isi-text p{
+.isi-text p {
     text-align: justify;
     margin-bottom: 14px;
 }
 
-/* Heading otomatis dari database */
-/* ================= HEADING DALAM ARTIKEL ================= */
-.isi-artikel h2,
-.isi-text h2{
-    color:#4f3527;
-
-    font-size:28px;
-    font-weight:700;
-    line-height:38px;
-
-    margin-top:28px;
-    margin-bottom:12px;
+/* HEADING DALAM ARTIKEL */
+.isi-text h2 {
+    color: #4f3527;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-top: 28px;
+    margin-bottom: 12px;
 }
 
-.isi-artikel h3,
-.isi-text h3{
-    color:#4f3527;
-    font-size:22px;
-    font-weight:700;
-    line-height:32px;
-    margin-top:22px;
-    margin-bottom:10px;
+.isi-text h3 {
+    color: #4f3527;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 22px;
+    margin-bottom: 10px;
 }
 
 /* List */
-.isi-artikel ul,
-.isi-text ul{
-    margin-left:25px;
-    margin-bottom:25px;
+.isi-text ul {
+    margin-left: 25px;
+    margin-bottom: 25px;
 }
-
-.isi-artikel li,
-.isi-text li{
-    margin-bottom:6px;
-    line-height:1.7;
+.isi-text li {
+    margin-bottom: 6px;
+    line-height: 1.7;
 }
 
 /* Bold */
-.isi-artikel strong,
-.isi-text strong,
-.isi-artikel b,
-.isi-text b{
-    color:#3d2d24;
-    font-weight:700;
+.isi-text b {
+    color: #3d2d24;
+    font-weight: 700;
 }
 
-
 /* ================= DANGER TEXT ================= */
-.danger-text{
-    color:#a32a2a;
-    font-weight:600;
-    margin-bottom:4px;
+.danger-text {
+    color: #a32a2a;
+    font-weight: 600;
+    margin-bottom: 4px;
 }
 
 /* ================= ARTIKEL LAIN ================= */
-.artikel-lain{
-    width:100%;
-    background:#bfd2ca;
-    padding:50px 5% 60px;
-    margin-top:40px;
+.artikel-lain {
+    width: 100%;
+    background: #bfd2ca;
+    padding: 50px 5% 60px;
+    margin-top: 40px;
 }
 
-.artikel-lain h3,
-.text-lain{
-    color:#3d2d24;
-    margin-bottom:30px;
-    font-size:22px;
-    font-weight:700;
+.text-lain {
+    color: #3d2d24;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 /* ================= CARD ================= */
-.artikel-card-container,
-.card-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    max-width:1200px;
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+}
+.card {
+    background: #f5f2e8;
+    border: 2px solid #8b6a55;
+    border-radius: 18px;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 5px 5px 0px #c8c1b5;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.12);
 }
 
-.artikel-card,
-.card{
-    background:#f5f2e8;
-    border:2px solid #8b6a55;
-    border-radius:18px;
-    padding:10px;
-    text-decoration:none;
-    transition:0.3s ease;
-    box-shadow:5px 5px 0px #c8c1b5;
-    display:flex;
-    flex-direction:column;
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+.card-content {
+    background: #4b3026;
+    margin-top: 10px;
+    border-radius: 14px;
+    padding: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
 }
 
-.artikel-card:hover,
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:5px 8px 15px rgba(0,0,0,0.12);
+.card-content h3 {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: white;
 }
 
-.artikel-card img,
-.card img{
-    width:100%;
-    height:170px;
-    object-fit:cover;
-    border-radius:14px;
-    display:block;
+.card-content p {
+    display: none;
 }
 
-.artikel-card-content,
-.card-content{
-    background:#4b3026;
-    margin-top:10px;
-    border-radius:14px;
-    padding:16px;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:15px;
-    flex:1;
-}
-
-.artikel-card-content h4,
-.card-content h3{
-    font-size:15px;
-    line-height:1.5;
-    font-weight:500;
-    color:white;
-}
-
-.card-content p{
-    display:none;
-}
-
-/* Tombol */
-.artikel-card-content button,
-.card-content span{
-    width:40px;
-    height:40px;
-    min-width:40px;
-    background:#6f8b80;
-    border:none;
-    border-radius:10px;
-    color:white;
-    cursor:pointer;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    transition:0.3s;
-    font-size:12px;
+/* Tombol Card */
+.card-content span {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: #6f8b80;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    font-size: 12px;
 }
 
 .artikel-card:hover .artikel-card-content button,
-.card:hover .card-content span{
-    background:#577066;
-    transform:scale(1.05);
+.card:hover .card-content span {
+    background: #577066;
+    transform: scale(1.05);
 }
 
-/* FOOTER */
-footer {
-    width: 100%;
-    padding: 45px 65px 35px;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr 0.8fr;
-    gap: 60px;
-    position: relative;
-    background: linear-gradient(rgba(74, 43, 27, 0.88), rgba(60, 35, 22, 0.92));
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px);
-    color: white;
-}
-/*FOOTER*/
-footer{
-    width:100%;
-    padding:45px 65px 35px;
-    display:grid;
-    grid-template-columns: 1.2fr 1fr 0.8fr;
-    gap:60px;
-    position:relative;
-    background:
-    linear-gradient(
-        rgba(74,43,27,0.88),
-        rgba(60,35,22,0.92)
-    ),
 
-    url('..assets/img_bg/bg_page.png');
-
-    background-size:cover;
-    background-position:center;
-    backdrop-filter:blur(4px);
-    color:white;
-    }
-/*FOOTER */
+/* ================= FOOTER ================= */
 footer {
     width: 100%;
     padding: 45px 65px 35px;
@@ -442,6 +266,9 @@ footer {
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(4px);
+    background: linear-gradient(rgba(74, 43, 27, 0.88), rgba(60, 35, 22, 0.92)), url('/assets/img_bg/bg_page.png');
+    background-size: cover;
+    background-position: center;
     color: white;
 }
 
@@ -453,13 +280,13 @@ footer::before {
     pointer-events: none;
 }
 
-.footer-left {
+.foot-center {
     position: relative;
     z-index: 2;
 }
 
 .footer-logo {
-    display: flex;  
+    display: flex;
     align-items: center;
     gap: 14px;
     margin-bottom: 18px;
@@ -482,11 +309,6 @@ footer::before {
     font-size: 13px;
     line-height: 1.9;
     color: #ebe4de;
-}
-
-.foot-center {
-    position: relative;
-    z-index: 2;
 }
 
 .footer-contact {
@@ -513,14 +335,12 @@ footer::before {
     margin-top: 25px;
 }
 
-/* tiap kolom */
 .footer-column h3 {
     font-size: 15px;
     margin-bottom: 14px;
     position: relative;
 }
 
-/* garis bawah */
 .footer-column h3::after {
     content: '';
     width: 85px;
@@ -544,7 +364,6 @@ footer::before {
     opacity: 0.8;
 }
 
-/* Menghilangkan warna biru default dan garis bawah pada link footer */
 .footer-column p a {
     text-decoration: none;
     color: inherit;
@@ -552,11 +371,11 @@ footer::before {
     width: 100%;
 }
 
-/* Supaya hover-nya tetap jalan meskipun ada di dalam tag <a> */
 .footer-column p:hover a {
     color: #ffffff;
 }
 
+/* ================= COPYRIGHT ================= */
 .copyright {
     background: #f5f2ea;
     padding: 14px 25px;
@@ -564,8 +383,30 @@ footer::before {
     color: #5d4a3d;
 }
 
-/* RESPONSIVE */
-@media(max-width: 768px) {
+/* ================= RESPONSIVE ================= */
+@media(max-width:992px) {
+    .artikel-content,
+    .konten-artikel {
+        flex-direction: column;
+    }
+
+    .quote-box {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .artikel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artikel-grid div {
+        border-right: none;
+        border-bottom: 1px solid #cfc6bc;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width:768px) {
     .navbar {
         flex-direction: column;
         gap: 20px;
@@ -576,37 +417,28 @@ footer::before {
         justify-content: center;
     }
 
-    .hero {
-        height: 650px;
+    .artikel-detail h1,
+    .judul-artikel {
+        font-size: 36px;
     }
 
-    .hero-text {
-        left: 20px;
-        top: 60px;
+    .isi-artikel,
+    .isi-text {
+        font-size: 15px;
     }
 
-    .hero-text h1 {
-        font-size: 38px;
+    .isi-artikel h2,
+    .isi-text h2 {
+        font-size: 30px;
     }
 
-    .hero-text p {
-        width: 90%;
-    }
-
-    .info-box {
-        flex-direction: column;
-        right: 20px;
-        left: 20px;
-        bottom: 20px;
-    }
-
-    .card-container {
-        grid-template-columns: 1fr;
+    .isi-artikel h3,
+    .isi-text h3 {
+        font-size: 24px;
     }
 
     footer {
-        grid-template-columns: 1fr; /* Perbaikan: Mengubah grid menjadi 1 kolom agar responsif, bukan flex-direction */
-        gap: 40px;
+        grid-template-columns: 1fr;
         padding: 40px 30px;
     }
 }
