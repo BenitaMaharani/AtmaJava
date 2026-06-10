@@ -1,8 +1,3 @@
-// koneksi = penghubung PHP dengan database
-Cara kerjanya:
-PHP → koneksi.php → MySQL Database → data ditampilkan ke website
-
-
 <?php
 
 $host = "localhost";
