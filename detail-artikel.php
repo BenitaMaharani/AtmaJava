@@ -1,17 +1,17 @@
 <?php
-include 'config/koneksi.php';// koneksi = penghubung PHP dengan database
+include 'config/koneksi.php';
 
 /* =========================
    AMBIL ID ARTIKEL YANG DIKLIK
 ========================= */
 $id = isset($_GET['id']) ? $_GET['id'] : 0;
-// $_GET = mengambil data dari URL
+
 /* =========================
    AMBIL DATA ARTIKEL SESUAI ID
 ========================= */
 $query = mysqli_query($conn, "SELECT * FROM artikel WHERE id='$id'");
 $data = mysqli_fetch_array($query);
-// mengambil artikel sesuai yang dipilih pengguna
+
 if (!$data) {
     echo "Artikel tidak ditemukan.";
     exit;
@@ -69,9 +69,6 @@ if (!$data) {
         $query2 = mysqli_query($conn, "SELECT * FROM artikel WHERE id != '$id' ORDER BY RAND() LIMIT 2");
 
         while($artikel = mysqli_fetch_array($query2)){
-        //while($artikel = mysqli_fetch_array($query2)) adalah looping yang digunakan untuk mengambil dan 
-        // menampilkan data dari database secara berulang sampai data habis, 
-        // biasanya dipakai untuk menampilkan daftar artikel atau data lebih dari satu
         ?>
             <a href="detail-artikel.php?id=<?php echo $artikel['id']; ?>" class="artikel-card">
                 <img src="assets/img_artikel/<?php echo $artikel['gambar']; ?>" alt="">

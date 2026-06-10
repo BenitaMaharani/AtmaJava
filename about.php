@@ -1,6 +1,5 @@
 <?php
-include 'config/koneksi.php'; // include = memanggil file lain agar bisa digunakan
-//Kode ini digunakan untuk memanggil file koneksi database yang berada di folder config.
+include 'config/koneksi.php';
 ?>
 
 <!DOCTYPE html>
@@ -11,9 +10,9 @@ include 'config/koneksi.php'; // include = memanggil file lain agar bisa digunak
     <title>About Us</title>
 
     <link rel="icon" type="image/png" href="assets/img_logo/logoatma.png">
-        //Menampilkan logo kecil (favicon) pada tab browser.
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/about.css">// CSS = mengatur tampilan halaman
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +28,6 @@ include 'config/koneksi.php'; // include = memanggil file lain agar bisa digunak
 
 <!-- ================= NAVBAR ================= -->
 <?php include 'components/navbar.php'; ?>
-//Kode ini memanggil file navbar yang berada di folder components.
 
 <!-- ================= ABOUT ================= -->
 
@@ -99,7 +97,6 @@ include 'config/koneksi.php'; // include = memanggil file lain agar bisa digunak
                     <div class="member-item"><a href="https://instagram.com/xyhzcawkl" target="_blank">@xyhzcawkl</a></div>
                     <div class="member-item"><a href="https://instagram.com/ssnndw._" target="_blank">@ssnndw._</a></div>
                     <div class="member-item"><a href="https://instagram.com/wiq1e" target="_blank">@wiq1e</a></div>
-                    // a = membuat hyperlink
                 </div>
             </div>
         </div>
@@ -108,6 +105,5 @@ include 'config/koneksi.php'; // include = memanggil file lain agar bisa digunak
     <div class="bg-gunung"></div>
 
     <?php include 'components/footer.php'; ?>
-    //Kode ini memanggil footer dari folder components.
 
 </section>
