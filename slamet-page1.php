@@ -41,9 +41,11 @@ if (!$data) {
 
     <div class="main-card">
         <div class="image-header" style="background-image: url('assets/img_gunung/<?php echo $data['gambar']; ?>.jpg');">
-            <div class="coordinate-box">
-                <p><i class="fa-solid fa-location-dot"></i> <?php echo $data['titik_koordinat']; ?></p>
-            </div>
+            <?php if (!empty($data['titik_koordinat'])): ?>
+                <div class="coordinate-box">
+                    <p><i class="fa-solid fa-location-dot"></i> <?php echo $data['titik_koordinat']; ?></p>
+                </div>
+            <?php endif; ?>
         </div>
 
         <div class="content-container">
