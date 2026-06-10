@@ -1,4 +1,3 @@
-// navbar = menu navigasi di bagian atas website
 <?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
