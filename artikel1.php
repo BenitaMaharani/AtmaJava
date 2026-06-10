@@ -1,8 +1,8 @@
 <?php
 include 'config/koneksi.php';
-
+// koneksi = penghubung PHP dengan database
+$query = mysqli_query($conn, "SELECT * FROM artikel WHERE id = 1");// SELECT = mengambil data dari database
 // Mengambil data artikel dengan ID 1 (Rencana Sebelum Melangkah)
-$query = mysqli_query($conn, "SELECT * FROM artikel WHERE id = 1");
 $data  = mysqli_fetch_array($query);
 
 // Jika data tidak ditemukan di database, set alternatif teks kosong agar tidak error
@@ -10,6 +10,7 @@ if (!$data) {
     echo "Artikel tidak ditemukan di database. Pastikan ID 1 tersedia.";
     exit;
 }
+// validasi = mencegah error
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +18,7 @@ if (!$data) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atma Java - <?php echo $data['judul']; ?></title>
-
+    // judul diambil langsung dari database
     <link rel="icon" type="image/png" href="assets/img_logo/logoatma.png">
 
     <link rel="stylesheet" href="css/artikel1.css">
@@ -31,23 +32,27 @@ if (!$data) {
 <body>
 
     <?php include 'components/navbar.php'; ?>
-
+    //Memanggil navbar dari folder components.
     <div class="hero-artikel">
         <img src="assets/img_artikel/<?php echo $data['gambar']; ?>" alt="Banner Artikel">
+        // gambar artikel diambil dari database
     </div>
 
     <section class="artikel-detail">
         <h1>
             <?php echo $data['judul']; ?>
+            // echo = menampilkan data ke halaman
         </h1>
 
         <div class="artikel-content">
             <div class="quote-box">
                 <?php echo nl2br($data['quote']); ?>
+                // nl2br = mengubah enter menjadi baris baru HTML
+                //digunakan untuk mengubah enter menjadi <br> sehingga format paragraf tetap rapi.
             </div>
 
             <div class="isi-artikel">
-                <?php echo $data['isi']; ?>
+                <?php echo $data['isi']; ?>// isi artikel diambil langsung dari database
             </div>
         </div>
     </section>
@@ -59,11 +64,16 @@ if (!$data) {
             <?php
             // Mengambil 2 artikel secara acak KECUALI artikel yang sedang dibuka (ID != 1)
             $query_rekomendasi = mysqli_query($conn, "SELECT * FROM artikel WHERE id != 1 ORDER BY RAND() LIMIT 2");
+            // rekomendasi artikel otomatis
+            // Penjelasannya:
+            // id != 1 → artikel yang sedang dibuka tidak ikut ditampilkan.
+            // ORDER BY RAND() → mengacak artikel.
+            // LIMIT 2 → hanya menampilkan 2 artikel.
             
             if ($query_rekomendasi && mysqli_num_rows($query_rekomendasi) > 0) {
-                while ($data_artikel = mysqli_fetch_array($query_rekomendasi)) {
+                while ($data_artikel = mysqli_fetch_array($query_rekomendasi)) {// while = menampilkan data satu per satu
             ?>
-                    <a href="detail-artikel.php?id=<?php echo $data_artikel['id']; ?>" class="artikel-card">
+                    <a href="detail-artikel.php?id=<?php echo $data_artikel['id']; ?>" class="artikel-card">//id = identitas unik setiap artikel
                         <img src="assets/img_artikel/<?php echo $data_artikel['gambar']; ?>" alt="artikel">
                         <div class="artikel-card-content">
                             <h4><?php echo $data_artikel['judul']; ?></h4>

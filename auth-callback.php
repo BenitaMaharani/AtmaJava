@@ -2,7 +2,7 @@
 include 'config/koneksi.php';
 
 if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+    session_start(); // session = menyimpan status login pengguna
 }
 
 // Menerima data secure token credential dari Google via Javascript

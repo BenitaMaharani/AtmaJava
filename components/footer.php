@@ -1,4 +1,6 @@
-<footer>
+//footer = bagian bawah website yang 
+berisi informasi tambahan
+<footer> 
     <div class="footer-left">
         <div class="footer-logo">
             <img src="assets/img_logo/logoatma.png" alt="logo">

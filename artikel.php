@@ -1,9 +1,10 @@
 <?php
 // Pastikan tidak ada spasi/enter sebelum tag php ini
 include 'config/koneksi.php';
+// koneksi = penghubung PHP dengan database
 // Gunakan pengecekan status agar tidak error jika session sudah jalan
 if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+    session_start();// session = menyimpan data pengguna sementara
 }
 // include 'config/session.php'; // Aktifkan jika halaman ini HANYA boleh dilihat user login
 ?>
@@ -66,10 +67,13 @@ if (session_status() === PHP_SESSION_NONE) {
     <section class="card-container">
     <?php
     $query = mysqli_query($conn, "SELECT * FROM artikel");
-    if(mysqli_num_rows($query) > 0) {
-        while($artikel = mysqli_fetch_array($query)){
+    if(mysqli_num_rows($query) > 0) {// mysqli_num_rows = menghitung jumlah data
+        while($artikel = mysqli_fetch_array($query)){// while = mengulang data sampai habis
+        //Looping ada di while(mysqli_fetch_array(...)) pada bagian artikel rekomendasi.
+        //Fungsinya untuk menampilkan semua data hasil query secara otomatis satu per satu sampai data habis.
         ?>
             <a href="detail-artikel.php?id=<?php echo $artikel['id']; ?>" class="card">
+                // id = identitas unik setiap artikel
                 <img src="assets/img_artikel/<?php echo $artikel['gambar']; ?>" alt="artikel">
                 <div class="card-content">
                     <h3><?php echo $artikel['judul']; ?></h3>
@@ -81,7 +85,7 @@ if (session_status() === PHP_SESSION_NONE) {
         }
     } else {
         echo "<p style='text-align:center; width:100%;'>Belum ada artikel yang diterbitkan.</p>";
-    }
+    }// echo = menampilkan data ke layar, Data diambil langsung dari database.
     ?>
     </section>
 
