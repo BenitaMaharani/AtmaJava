@@ -9,7 +9,6 @@ body {
     background: #eef0e3;
 }
 
-
 /*NAVBAR*/
 .navbar{
     width:95%;
@@ -21,6 +20,19 @@ body {
     align-items:center;
     padding:12px 25px;
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+/* NAVBAR */
+.navbar {
+    width: 95%;
+    margin: 20px auto;
+    background: #f6f6ed;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
 }
 
 .logo img {
@@ -156,6 +168,7 @@ body {
     left: 0;
     background: rgba(0, 0, 0, 0.15);
 }
+
 .hero-text p{
     width:540px;
     line-height:1.9;
@@ -174,6 +187,21 @@ body {
     display:flex;
     gap:35px;
     z-index:2;
+
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.15);
 }
 
 .hero-text {
@@ -294,6 +322,22 @@ body {
     line-height:24px;
 
     max-width:700px;
+
+}
+/* TITLE */
+.title-section {
+    text-align: center;
+    margin-top:40px;
+}
+
+.title-section h2 {
+    color: #4f3527;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.title-section p {
+    color: #7c7c7c;
 }
 
 /* CARD */
@@ -371,10 +415,6 @@ body {
     white-space: normal; 
 }
 
-/* ==========================================================================
-   PERBAIKAN KOTAK QUOTES: MENJADI EFEK KACA (GLASSMORPHISM) SEPERTI FOTO KEDUA
-   ========================================================================== */
-
 /* QUOTES */
 .quotes {
     width: 100%;
@@ -396,6 +436,15 @@ body {
     background:url('../assets/img_bg/bg_page.png');
     background-size:cover;
     background-position:center;
+
+}
+/* QUOTES */
+.quotes {
+    width: 100%;
+    padding: 100px 20px; /* Diperlebar padding atas bawah agar komposisi kotak di tengah pas */
+    background: url('../assets/img_bg/bg_page.png');
+    background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     justify-content: center;
@@ -417,21 +466,22 @@ body {
 }
 
 .quotes-box h2 {
-    font-size: 38px;
-    color: #f6f6ed; /* Mengubah warna judul menjadi krem terang agar terbaca jelas */
-    margin-bottom: 20px;
-    font-family: serif;
+    font-size: 34px;
+    color: #3c2316eb; 
+    margin-bottom: 15px;
+    font-family: 'Poppins',sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .quotes-box p {
-    font-size: 28px;
-    color: #f6f6ed; /* Mengubah warna kutipan utama menjadi krem terang */
-    margin-bottom: 25px;
-    font-style: italic;
-    font-family: serif;
+    font-size: 20px;
+    color: #3c2316eb; /* Mengubah warna kutipan utama menjadi krem terang */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.4;
+    font-style: italic;
 }
 
 .quotes-box span {
@@ -478,6 +528,20 @@ footer{
     background-position:center;
     backdrop-filter:blur(4px);
     color:white;
+    }
+/*FOOTER */
+footer {
+    width: 100%;
+    padding: 45px 65px 35px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    gap: 60px;
+    position: relative;
+    background: linear-gradient(#4a2b1be0, #3c2316eb);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(4px);
+    color: white;
 }
 
 footer::before {

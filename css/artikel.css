@@ -215,42 +215,31 @@ body{
 /*TITLE*/
 .title-section{
     width:100%;
-
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-
     text-align:center;
-
     margin-top:55px;
     margin-bottom:45px;
 }
 
 .title-section h2{
     color:#4f3527;
-
     font-size:34px;
     font-weight:700;
-
     line-height:42px;
-
     margin:0;
     padding:0;
-
     display:block;
 }
 
 .title-section p{
     margin-top:12px;
-
     color:#7c7c7c;
-
     font-size:14px;
     font-weight:400;
-
     line-height:24px;
-
     max-width:700px;
 }
 /* ================= CARD ================= */
@@ -295,15 +284,10 @@ body{
 /* ISI CARD */
 .card-content{
     background:#4b3026;
-
     margin-top:12px;
-
     border-radius:18px;
-
     padding:18px;
-
     color:white;
-
     text-align:left;
 }
 
@@ -317,7 +301,7 @@ body{
 
 /* DESKRIPSI */
 .card-content p{
-    font-size:12px;
+    font: size 14px;
     line-height:1.8;
     color:#e7e7e7;
     margin-bottom:20px;
@@ -326,7 +310,6 @@ body{
 /* BUTTON */
 .card-content span{
     width:100%;
-    max-width:270px;
     height:42px;
     margin:auto;
     border-radius:12px;
@@ -384,71 +367,24 @@ body{
     }
 
 }
-
-/*QUOTES*/
-.quotes{
+/* BACKGROUND GUNUNG */
+.bg-gunung{
     width:100%;
-    padding:90px 20px 0;
+    height:350px;
     background:url('../assets/img_bg/bg_page.png');
     background-size:cover;
     background-position:center;
-    position: relative;
-}
-
-.quotes-box{
-    width:85%;
-    margin: auto;
-    background:rgba(255,255,255,0.28);
-    border:1px solid rgb(255,255,255,0.35);
-    backdrop-filter: blur(80px);
-    -webkit-backdrop-filter: blur(8px);
-
-    padding:45px 55px;
-    border-radius:25px;
-
-    text-align:center;
-
-    box-shadow:0 8px 30px rgba(0,0,0,0.10);
-}
-
-.quotes-box h2{
-    font-size:38px;
-    color:#4f3527;
-    margin-bottom:18px;
-    font-family:serif;
-    font-weight:500;
-}
-
-.quotes-box p{
-    font-size:30px;
-    color:#4f3527;
-    margin-bottom:20px;
-    font-style:italic;
-    font-family:serif;
-}
-
-.quotes-box span{
-    display:block;
-    max-width:760px;
-    margin:auto;
-
-    color:#4d4d4d;
-    line-height:2;
-    font-size:15px;
+    background-repeat:no-repeat;
 }
 
 /*FOOTER*/
 footer{
     width:100%;
-
     padding:45px 65px 35px;
-
     display:grid;
     grid-template-columns: 1.2fr 1fr 0.8fr;
     gap:60px;
-
     position:relative;
-
     background:
     linear-gradient(
         rgba(74,43,27,0.88),
@@ -459,21 +395,15 @@ footer{
 
     background-size:cover;
     background-position:center;
-
     backdrop-filter:blur(4px);
-
     color:white;
 }
 
 footer::before{
-
     content:'';
-
     position:absolute;
     inset:0;
-
     background:rgba(255,255,255,0.03);
-
     pointer-events:none;
 }
 
@@ -496,7 +426,6 @@ footer::before{
 
 .footer-logo h2{
     font-size:42px;
-
     font-family:serif;
     font-weight:500;
     font-style:italic;
@@ -504,10 +433,8 @@ footer::before{
 
 .footer-left p{
     width:290px;
-
     font-size:13px;
     line-height:1.9;
-
     color:#ebe4de;
 }
 
@@ -524,25 +451,20 @@ footer::before{
 }
 
 .footer-contact i{
-
     font-size:18px;
     margin-top:4px;
-
     color:#f2f2f2;
 }
 
 .footer-contact p{
     font-size:13px;
     line-height:1.9;
-
     color:#f4f0ec;
 }
 
 .footer-menu{
-
     display:flex;
     justify-content:space-between;
-
     margin-top:25px;
 }
 
@@ -550,24 +472,18 @@ footer::before{
 /* tiap kolom */
 
 .footer-column h3{
-
     font-size:15px;
     margin-bottom:14px;
-
     position:relative;
 }
 
 
 /* garis bawah */
 .footer-column h3::after{
-
     content:'';
-
     width:85px;
     height:1px;
-
     background:rgba(255,255,255,0.5);
-
     position:absolute;
     left:0;
     bottom:-8px;
@@ -575,22 +491,18 @@ footer::before{
 }
 
 .footer-column p{
-
     margin-top:14px;
-
     font-size:13px;
     color:#f1ece7;
-
     cursor:pointer;
-
     transition:0.3s;
 }
 
 .footer-column p:hover{
-
     transform:translateX(4px);
     opacity:0.8;
 }/* Menghilangkan warna biru default dan garis bawah pada link footer */
+
 .footer-column p a {
     text-decoration: none;
     color: inherit; /* Mengikuti warna p (krem) */
@@ -603,14 +515,10 @@ footer::before{
     color: #ffffff;
 }
 
-
 .copyright{
     background:#f5f2ea;
-
     padding:14px 25px;
-
     font-size:12px;
-
     color:#5d4a3d;
 }
 
@@ -650,6 +558,8 @@ footer::before{
         left:20px;
         bottom:20px;
     }
+
+    
 
     footer{
         flex-direction:column;

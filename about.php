@@ -102,9 +102,8 @@ include 'config/koneksi.php';
         </div>
     </div>
 
+    <div class="bg-gunung"></div>
+
+    <?php include 'components/footer.php'; ?>
+
 </section>
-
-<?php include 'components/footer.php'; ?>
-
-</body>
-</html>

@@ -118,7 +118,7 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 12px 20px;
     border-radius: 16px;
-    font-family: 'Georgia', serif;
+    font-family: 'Poppins', serif;
     font-size: 14px;
     color: #333;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -133,9 +133,9 @@ body {
 }
 
 .mountain-title {
-    font-family: 'Georgia', serif;
+    font-family: 'Poppins', serif;
     text-align: center;
-    font-size: 46px;               /* Diperbesar nilainya agar megah seperti di Figma */
+    font-size: 34px;               /* Diperbesar nilainya agar megah seperti di Figma */
     color: #2a3d30;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -145,7 +145,7 @@ body {
     font-style: italic;
     text-align: center;
     color: #444;
-    font-size: 18px;               /* Disesuaikan ukurannya agar proporsional */
+    font-size: 14px;               /* Disesuaikan ukurannya agar proporsional */
     margin-bottom: 50px;
     line-height: 1.6;
     max-width: 800px;              /* Membatasi lebar teks sub-judul agar melipat rapi di tengah */
@@ -155,7 +155,7 @@ body {
 
 /* --- STYLING ISI TEXT DARI DATABASE --- */
 .article-body {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8; /* Menjaga jarak antar baris teks tetap renggang dan estetik */
     color: #2b2b2b;
     text-align: justify;
@@ -169,8 +169,8 @@ body {
 }
 
 .section-block h2 {
-    font-family: 'Georgia', serif;
-    font-size: 24px;               /* Judul poin nomor (1. Dasar-Dasar Geologi) diperbesar sesuai figma */
+    font-family: 'Poppins', serif;
+    font-size: 15px;               /* Judul poin nomor (1. Dasar-Dasar Geologi) diperbesar sesuai figma */
     color: #1e2d22;
     margin-bottom: 18px;
     border-bottom: none;           /* Menghilangkan garis pembatas bawah tipis agar bersih seperti figma */
@@ -234,13 +234,10 @@ body {
 /*FOOTER*/
 footer{
     width:100%;
-
     padding:45px 65px 35px;
-
     display:grid;
     grid-template-columns: 1.2fr 1fr 0.8fr;
     gap:60px;
-
     position:relative;
 
     background:
@@ -253,21 +250,15 @@ footer{
 
     background-size:cover;
     background-position:center;
-
     backdrop-filter:blur(4px);
-
     color:white;
 }
 
 footer::before{
-
     content:'';
-
     position:absolute;
     inset:0;
-
     background:rgba(255,255,255,0.03);
-
     pointer-events:none;
 }
 
@@ -290,7 +281,6 @@ footer::before{
 
 .footer-logo h2{
     font-size:42px;
-
     font-family:serif;
     font-weight:500;
     font-style:italic;
@@ -298,10 +288,8 @@ footer::before{
 
 .footer-left p{
     width:290px;
-
     font-size:13px;
     line-height:1.9;
-
     color:#ebe4de;
 }
 
@@ -313,30 +301,24 @@ footer::before{
 .footer-contact{
     display:flex;
     gap:14px;
-
     margin-bottom:24px;
 }
 
 .footer-contact i{
-
     font-size:18px;
     margin-top:4px;
-
     color:#f2f2f2;
 }
 
 .footer-contact p{
     font-size:13px;
     line-height:1.9;
-
     color:#f4f0ec;
 }
 
 .footer-menu{
-
     display:flex;
     justify-content:space-between;
-
     margin-top:25px;
 }
 
@@ -344,24 +326,18 @@ footer::before{
 /* tiap kolom */
 
 .footer-column h3{
-
     font-size:15px;
     margin-bottom:14px;
-
     position:relative;
 }
 
 
 /* garis bawah */
 .footer-column h3::after{
-
     content:'';
-
     width:85px;
     height:1px;
-
     background:rgba(255,255,255,0.5);
-
     position:absolute;
     left:0;
     bottom:-8px;
@@ -369,19 +345,14 @@ footer::before{
 }
 
 .footer-column p{
-
     margin-top:14px;
-
     font-size:13px;
     color:#f1ece7;
-
     cursor:pointer;
-
     transition:0.3s;
 }
 
 .footer-column p:hover{
-
     transform:translateX(4px);
     opacity:0.8;
 }/* Menghilangkan warna biru default dan garis bawah pada link footer */
@@ -400,11 +371,8 @@ footer::before{
 
 .copyright{
     background:#f5f2ea;
-
     padding:14px 25px;
-
     font-size:12px;
-
     color:#5d4a3d;
 }
 
